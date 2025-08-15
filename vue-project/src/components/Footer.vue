@@ -24,7 +24,7 @@
           <div class="contact-info">
             <div class="contact-item">
               <i class="fas fa-envelope"></i>
-              <span>anasorkhis@gmail.com</span>
+              <span>orkhisayman@gmail.commail.com</span>
             </div>
             <div class="contact-item">
               <i class="fas fa-phone"></i>

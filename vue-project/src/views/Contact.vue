@@ -21,7 +21,7 @@
               </div>
               <div class="contact-text">
                 <h3>Email Me</h3>
-                <a href="mailto:anasorkhis@gmail.com" class="contact-link">anasorkhis@gmail.com</a>
+                <a href="mailto:orkhisayman@gmail.commail.com" class="contact-link">orkhisayman@gmail.commail.com</a>
               </div>
             </div>
             

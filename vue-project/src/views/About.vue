@@ -36,7 +36,7 @@
                 <i class="fas fa-phone"></i> +1 438-778-5746
               </p>
               <p class="contact-detail">
-                <i class="fas fa-envelope"></i> anasorkhis@gmail.com
+                <i class="fas fa-envelope"></i> orkhisayman@gmail.commail.com
               </p>
             </div>
             
