@@ -60,7 +60,7 @@
               claire et la collaboration d'équipe.
             </p>
             
-            <a href="#" class="cv-download-btn">
+            <a href="#" @click="downloadCV" class="cv-download-btn">
               <span class="cv-btn-text">Télécharger mon CV</span>
               <span class="cv-btn-icon"><i class="fas fa-download"></i></span>
             </a>
@@ -283,6 +283,19 @@
 <script>
 export default {
   name: 'About',
+  methods: {
+    downloadCV() {
+      // Create a temporary link element
+      const link = document.createElement('a');
+      link.href = '/CV_Ayman_Orkhis.pdf';
+      link.download = 'CV_Ayman_Orkhis.pdf';
+      
+      // Append to body, click, and remove
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  },
   mounted() {
     // Animation for skill bars when section is in view
     const observer = new IntersectionObserver((entries) => {

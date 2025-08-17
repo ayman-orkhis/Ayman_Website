@@ -2,12 +2,15 @@
   <nav class="navbar">
     <div class="container">
       <router-link to="/" class="logo">
-        <span class="logo-text">Portfolio</span>
+        <span class="logo-text">
+          <span class="logo-first">Ayman</span>
+          <span class="logo-last">Orkhis</span>
+        </span>
       </router-link>
       <div class="nav-links" :class="{ 'active': isMenuOpen }">
         <router-link to="/" class="nav-link" @click="closeMenu">Accueil</router-link>
         <router-link to="/a-propos" class="nav-link" @click="closeMenu">À Propos</router-link>
-        <a href="#projects" class="nav-link" @click="handleNavLinkClick('projects')">Projets</a>
+        <router-link to="/projets" class="nav-link" @click="closeMenu">Projets</router-link>
         <router-link to="/contact" class="nav-link" @click="closeMenu" active-class="active">Contact</router-link>
       </div>
       <div class="menu-toggle" @click="toggleMenu" :class="{ 'active': isMenuOpen }" aria-label="Toggle menu">
@@ -116,12 +119,54 @@ export default {
 }
 
 .logo-text {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: var(--primary-color);
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   margin: 0;
   line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-first {
+  color: #667eea;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.logo-last {
+  color: #764ba2;
+  font-weight: 600;
+  position: relative;
+}
+
+.logo-last::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 1px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-last::after {
+  transform: scaleX(1);
+}
+
+.logo:hover .logo-first {
+  color: #5a6fd8;
+  transform: translateY(-1px);
+}
+
+.logo:hover .logo-last {
+  color: #6b4c93;
+  transform: translateY(-1px);
 }
 
 .logo a:hover {
