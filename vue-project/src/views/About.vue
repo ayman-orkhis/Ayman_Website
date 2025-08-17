@@ -4,8 +4,12 @@
     <section class="about-hero">
       <div class="container">
         <div class="about-hero-content">
-          <h1 class="section-title">À Propos de Moi</h1>
-          <p class="subtitle">Développeur passionné créant des expériences web exceptionnelles</p>
+          <h1 class="section-title">About Me</h1>
+          <p style="font-style: italic; font-size: 1.6rem; line-height: 1.6; color: #333; margin-top: 30px; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">
+            ❝ The only way to do great work is to love what you do. ❞
+            <br>
+            <span style="font-weight: bold; color: #ff8c00; font-size: 1.2rem;"> Steve Jobs</span>
+            </p>
         </div>
       </div>
       <div class="shape-divider">
@@ -26,42 +30,51 @@
             </div>
           </div>
           <div class="about-content">
-            <h2 class="section-subtitle">Profil professionnel</h2>
+            <h2 class="section-subtitle">Professionnel Profil</h2>
             <div class="contact-info">
-              <h3>ANAS ORKHIS</h3>
+              <h3>Ayman Orkhis</h3>
               <p class="contact-detail">
-                <i class="fas fa-map-marker-alt"></i> 5987 Bd Rosemont, Montréal, QC, Canada
+                <i class="fas fa-map-marker-alt"></i> Palaiseau, Île-de-France, France
               </p>
               <p class="contact-detail">
-                <i class="fas fa-phone"></i> +1 438-778-5746
+                <i class="fas fa-phone"></i> +33 671-099-596
               </p>
               <p class="contact-detail">
-                <i class="fas fa-envelope"></i> orkhisayman@gmail.commail.com
+                <i class="fas fa-envelope"></i> orkhisayman@gmail.com
               </p>
             </div>
             
             <p class="about-text">
-              Développeur Full-Stack passionné, doté de plus de 7 ans d'expérience dans la conception et
-              le développement d'applications web robustes et évolutives. Expertise avancée en
-              technologies back-end (NestJS, Express.js, .NET MVC) et front-end (Vue.js, React, Next.js),
-              ainsi qu'en bases de données relationnelles et NoSQL (PostgreSQL, MySQL, MongoDB).
+              I am an <span style="font-weight:700;">AI & Data Science engineering student</span> in my 3rd year at
+              <span style="font-weight:700; color:#ff8c00;">Télécom SudParis</span>, currently pursuing a
+              <span style="font-weight:700; color:#ff8c00;">Master’s in Data Science at École Polytechnique</span>.
+              I have a strong foundation in <span style="font-weight:700;">mathematics, machine learning, deep learning, NLP, and computer vision</span>,
+              with hands-on experience in <span style="font-weight:700;">Python</span>, <span style="font-weight:700;">SQL</span>, and frameworks such as
+              <span style="font-weight:700;">TensorFlow</span>, <span style="font-weight:700;">PyTorch</span>, and <span style="font-weight:700;">Scikit-learn</span>.
             </p>
+
             <p class="about-text">
-              Expérience solide en modernisation de systèmes ERP (migration depuis FoxPro),
-              automatisation de processus via OCR, et création de solutions logistiques intelligentes
-              (applications de livraison, Google Maps API).
+              Through my previous <span style="font-weight:700;">internships and projects</span>, I applied these skills to impactful challenges:
+              <span style="font-weight:700;">medical image segmentation</span> with advanced architectures
+              (<span style="font-style:italic;">Mamba & MedNeXt</span>), the development of
+              <span style="font-weight:700;">language models for Indigenous languages of Canada</span> using
+              <span style="font-weight:700;">Retrieval-Augmented Generation (RAG)</span>, and
+              <span style="font-weight:700;">predictive real-estate modeling</span> at <span style="font-weight:700;">Avito.ma</span>.
+              In each of these, I distinguished myself as a <span style="font-weight:700;">key contributor</span>, with several works
+              <span style="font-weight:700;">recognized by awards and prizes</span>.
             </p>
+
             <p class="about-text">
-              À l'aise dans les environnements cloud (GCP, Docker) et la méthodologie Agile/Scrum.
-              Bonne maîtrise de Salesforce (Apex, LWC, Flow Builder).
+              <span style="font-weight:700;">Autonomous, rigorous, and results-driven</span>, I value
+              <span style="font-weight:700;">clean code</span>, <span style="font-weight:700;">reproducible experiments</span>, and
+              <span style="font-weight:700;">teamwork</span>. I am fluent in <span style="font-weight:700;">French</span> and
+              <span style="font-weight:700;">English</span>, strengthened by <span style="font-weight:700;">international experiences</span> that
+              enhanced my adaptability and cross-cultural collaboration.
             </p>
-            <p class="about-text">
-              Autonome, rigoureux et orienté résultats, je valorise la qualité du code, la documentation
-              claire et la collaboration d'équipe.
-            </p>
+
             
             <a href="#" @click="downloadCV" class="cv-download-btn">
-              <span class="cv-btn-text">Télécharger mon CV</span>
+              <span class="cv-btn-text">Download My CV</span>
               <span class="cv-btn-icon"><i class="fas fa-download"></i></span>
             </a>
           </div>

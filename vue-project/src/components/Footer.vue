@@ -3,18 +3,19 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-section">
-          <h3 class="footer-title">À Propos</h3>
-          <p class="footer-about">
-            Développeur Full-Stack avec 7+ ans d'expérience en développement d'applications web robustes et évolutives. Spécialisé en développement back-end et front-end avec une expertise en architecture logicielle.
+          <h3 class="footer-title">Quote</h3>
+          <p class="footer-about" style="font-style: italic; font-size: 1.1rem; color: #ddd; text-align: center;">
+            "It always seems impossible until it's done."
           </p>
+          <p style="text-align: center; margin-top: 5px; font-weight: bold; color: #ff8c00;">Nelson Mandela</p>
         </div>
         
         <div class="footer-section">
           <h3 class="footer-title">Liens Rapides</h3>
           <ul class="footer-links">
-            <li><a href="#" class="footer-link">Accueil</a></li>
-            <li><a href="#about" class="footer-link">À Propos</a></li>
-            <li><a href="#projects" class="footer-link">Projets</a></li>
+            <li><a href="#" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Me</a></li>
+            <li><a href="#projects" class="footer-link">Projects</a></li>
             <li><a href="#contact" class="footer-link">Contact</a></li>
           </ul>
         </div>
@@ -24,17 +25,17 @@
           <div class="contact-info">
             <div class="contact-item">
               <i class="fas fa-envelope"></i>
-              <span>orkhisayman@gmail.commail.com</span>
+              <span>orkhisayman@gmail.com</span>
             </div>
             <div class="contact-item">
               <i class="fas fa-phone"></i>
-              <span>+1 438-778-5746</span>
+              <span>+33 671-099-596</span>
             </div>
             <div class="social-links">
-              <a href="https://github.com/yourusername" target="_blank" class="social-link" aria-label="GitHub" title="GitHub">
+              <a href="https://github.com/Pacman-Ayman" target="_blank" class="social-link" aria-label="GitHub" title="GitHub">
                 <i class="fab fa-github"></i>
               </a>
-              <a href="https://www.linkedin.com/in/anas-orkhis-b1364b263/" target="_blank" class="social-link" aria-label="LinkedIn" title="LinkedIn">
+              <a href="https://www.linkedin.com/in/ayman-orkhis/" target="_blank" class="social-link" aria-label="LinkedIn" title="LinkedIn">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </div>
@@ -42,14 +43,16 @@
         </div>
       </div>
       
-      <div class="footer-bottom">
-        <p>&copy; {{ currentYear }} Anas Orkhis. Tous droits réservés.</p>
-        <div class="footer-legal">
-          <a href="#" class="legal-link">Politique de confidentialité</a>
-          <span class="divider">|</span>
-          <a href="#" class="legal-link">Conditions d'utilisation</a>
-        </div>
-      </div>
+     <div class="footer-bottom" style="text-align:center; padding: 15px 0; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; color: #aaa;">
+  <p style="margin: 5px 0;">
+    &copy; {{ currentYear }} <span style="color: #ff8c00; font-weight:bold;">Ayman Orkhis</span>. All rights reserved.
+  </p>
+  <div class="footer-legal" style="margin-top: 5px;">
+    <a href="#" class="legal-link" style="color: #ccc; margin: 0 10px; text-decoration:none;">Privacy Policy</a>
+    <span class="divider" style="color:#666;">|</span>
+    <a href="#" class="legal-link" style="color: #ccc; margin: 0 10px; text-decoration:none;">Terms of Use</a>
+  </div>
+</div>
     </div>
     
     <!-- Back to top button -->

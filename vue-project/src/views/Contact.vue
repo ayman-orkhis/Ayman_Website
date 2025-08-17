@@ -21,7 +21,7 @@
               </div>
               <div class="contact-text">
                 <h3>Email Me</h3>
-                <a href="mailto:orkhisayman@gmail.commail.com" class="contact-link">orkhisayman@gmail.commail.com</a>
+                <a href="mailto:orkhisayman@gmail.com" class="contact-link">orkhisayman@gmail.com</a>
               </div>
             </div>
             
@@ -31,7 +31,7 @@
               </div>
               <div class="contact-text">
                 <h3>Call Me</h3>
-                <a href="tel:+14387785746" class="contact-link">+1 438-778-5746</a>
+                <a href="tel:+33671099596" class="contact-link">+33 671-099-596</a>
               </div>
             </div>
             
@@ -41,7 +41,7 @@
               </div>
               <div class="contact-text">
                 <h3>Location</h3>
-                <span>Montréal, QC, Canada</span>
+                <span>Palaiseau, Île-de-France, France</span>
               </div>
             </div>
           </div>
@@ -49,10 +49,10 @@
           <div class="social-section">
             <h3>Follow Me</h3>
             <div class="social-links">
-              <a href="https://github.com/yourusername" target="_blank" class="social-link" aria-label="GitHub">
+              <a href="https://github.com/Pacman-Ayman" target="_blank" class="social-link" aria-label="GitHub">
                 <i class="fab fa-github"></i>
               </a>
-              <a href="https://www.linkedin.com/in/anas-orkhis-b1364b263/" target="_blank" class="social-link" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/ayman-orkhis/" target="_blank" class="social-link" aria-label="LinkedIn">
                 <i class="fab fa-linkedin-in"></i>
               </a>
               <a href="#" class="social-link" aria-label="Twitter">

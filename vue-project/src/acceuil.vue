@@ -4,16 +4,16 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1>Bonjour, je suis <span class="highlight">Anas Orkhis</span></h1>
-          <h2>Développeur Full-Stack</h2>
-          <p class="intro">Développeur Full-Stack avec 7+ ans d'expérience en création d'applications web robustes et évolutives</p>
+          <h1 style="text-align:center; color:black;">Hello, I’m <br> <span style="color:orange; font-weight:bold;">Ayman Orkhis</span></h1>
+          <h2 style="text-align:center;"><br></h2>
+          <p class="intro">Third-year engineering student at Télécom SudParis, specializing in AI and Data Science. Passionate about machine learning, deep learning, NLP, and computer vision. Experienced in research and applied AI development, with projects ranging from medical image segmentation to language models.</p>
           <div class="cta-buttons">
             <router-link to="/contact" class="btn btn-primary">
-              <span class="btn-text">Me Contacter</span>
+              <span class="btn-text">Contact Me</span>
               <span class="btn-icon">→</span>
             </router-link>
-            <a href="#projects" class="btn btn-secondary">
-              <span class="btn-text">Voir mes Projets</span>
+            <a href="/projets" class="btn btn-secondary">
+              <span class="btn-text">View My Projects</span>
               <span class="btn-icon">↗</span>
             </a>
           </div>

@@ -8,9 +8,9 @@
         </span>
       </router-link>
       <div class="nav-links" :class="{ 'active': isMenuOpen }">
-        <router-link to="/" class="nav-link" @click="closeMenu">Accueil</router-link>
-        <router-link to="/a-propos" class="nav-link" @click="closeMenu">À Propos</router-link>
-        <router-link to="/projets" class="nav-link" @click="closeMenu">Projets</router-link>
+        <router-link to="/" class="nav-link" @click="closeMenu">Home</router-link>
+        <router-link to="/a-propos" class="nav-link" @click="closeMenu">About Me</router-link>
+        <router-link to="/projets" class="nav-link" @click="closeMenu">Projects</router-link>
         <router-link to="/contact" class="nav-link" @click="closeMenu" active-class="active">Contact</router-link>
       </div>
       <div class="menu-toggle" @click="toggleMenu" :class="{ 'active': isMenuOpen }" aria-label="Toggle menu">
