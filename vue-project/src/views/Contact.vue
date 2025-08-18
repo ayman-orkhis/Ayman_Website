@@ -2,8 +2,8 @@
   <div class="contact-page">
     <div class="contact-hero">
       <div class="container">
-        <h1 class="fade-in">Let's Connect</h1>
-        <p class="subtitle">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+        <h1 class="fade-in">{{ t('contact.title') }}</h1>
+        <p class="subtitle">{{ t('contact.subtitle') }}</p>
       </div>
     </div>
 
@@ -11,8 +11,8 @@
       <div class="contact-content">
         <!-- Contact Information -->
         <div class="contact-info slide-in-left">
-          <h2>Get in Touch</h2>
-          <p class="contact-description">Feel free to reach out for collaborations or just a friendly hello. I'll get back to you as soon as possible!</p>
+          <h2>{{ t('contact.getInTouch') }}</h2>
+          <p class="contact-description">{{ t('contact.description') }}</p>
           
           <div class="contact-details">
             <div class="contact-card">
@@ -20,7 +20,7 @@
                 <i class="fas fa-envelope"></i>
               </div>
               <div class="contact-text">
-                <h3>Email Me</h3>
+                <h3>{{ t('contact.email') }}</h3>
                 <a href="mailto:orkhisayman@gmail.com" class="contact-link">orkhisayman@gmail.com</a>
               </div>
             </div>
@@ -30,7 +30,7 @@
                 <i class="fas fa-phone"></i>
               </div>
               <div class="contact-text">
-                <h3>Call Me</h3>
+                <h3>{{ t('contact.phone') }}</h3>
                 <a href="tel:+33671099596" class="contact-link">+33 671-099-596</a>
               </div>
             </div>
@@ -40,14 +40,14 @@
                 <i class="fas fa-map-marker-alt"></i>
               </div>
               <div class="contact-text">
-                <h3>Location</h3>
+                <h3>{{ t('contact.location') }}</h3>
                 <span>Palaiseau, Île-de-France, France</span>
               </div>
             </div>
           </div>
           
           <div class="social-section">
-            <h3>Follow Me</h3>
+            <h3>{{ t('contact.followMe') }}</h3>
             <div class="social-links">
               <a href="https://github.com/Pacman-Ayman" target="_blank" class="social-link" aria-label="GitHub">
                 <i class="fab fa-github"></i>
@@ -64,7 +64,7 @@
         
         <!-- Contact Form -->
         <div class="contact-form slide-in-right">
-          <h2>Send Me a Message</h2>
+          <h2>{{ t('contact.sendMessage') }}</h2>
           <form @submit.prevent="submitForm" class="form-container">
             <div class="form-group">
               <input 
@@ -76,7 +76,7 @@
                 @focus="handleFocus"
                 @blur="handleBlur"
               >
-              <label for="name" class="form-label">Your Name</label>
+              <label for="name" class="form-label">{{ t('contact.name') }}</label>
               <div class="focus-bg"></div>
             </div>
             
@@ -90,7 +90,7 @@
                 @focus="handleFocus"
                 @blur="handleBlur"
               >
-              <label for="email" class="form-label">Your Email</label>
+              <label for="email" class="form-label">{{ t('contact.email') }}</label>
               <div class="focus-bg"></div>
             </div>
             
@@ -104,7 +104,7 @@
                 @focus="handleFocus"
                 @blur="handleBlur"
               >
-              <label for="subject" class="form-label">Subject</label>
+              <label for="subject" class="form-label">{{ t('contact.subject') }}</label>
               <div class="focus-bg"></div>
             </div>
             
@@ -118,13 +118,13 @@
                 @focus="handleFocus"
                 @blur="handleBlur"
               ></textarea>
-              <label for="message" class="form-label">Your Message</label>
+              <label for="message" class="form-label">{{ t('contact.message') }}</label>
               <div class="focus-bg"></div>
             </div>
             
             <button type="submit" class="submit-btn" :disabled="isSubmitting">
               <span class="btn-text">
-                {{ isSubmitting ? 'Sending...' : 'Send Message' }}
+                {{ isSubmitting ? t('contact.sending') : t('contact.send') }}
               </span>
               <span class="btn-icon">
                 <i class="fas" :class="isSubmitting ? 'fa-spinner fa-spin' : 'fa-paper-plane'"></i>
@@ -135,9 +135,20 @@
           <div v-if="showSuccess" class="success-message">
             <div class="success-content">
               <i class="fas fa-check-circle"></i>
-              <h3>Message Sent!</h3>
-              <p>Thank you for reaching out. I'll get back to you as soon as possible!</p>
+              <h3>{{ t('contact.messageSent') }}</h3>
+              <p>{{ t('contact.thankYou') }}</p>
               <button @click="showSuccess = false" class="close-btn">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div v-if="showError" class="error-message">
+            <div class="error-content">
+              <i class="fas fa-exclamation-triangle"></i>
+              <h3>{{ t('contact.errorTitle') }}</h3>
+              <p>{{ errorMessage }}</p>
+              <button @click="showError = false" class="close-btn">
                 <i class="fas fa-times"></i>
               </button>
             </div>
@@ -146,17 +157,18 @@
       </div>
     </div>
     
-    <div v-if="showSuccess" class="success-message">
-      <i class="fas fa-check-circle"></i>
-      <p>Votre message a été envoyé avec succès !</p>
-      <button @click="showSuccess = false" class="close-btn">×</button>
-    </div>
   </div>
 </template>
 
 <script>
+import { useLanguage } from '@/composables/useLanguage'
+
 export default {
   name: 'Contact',
+  setup() {
+    const { t } = useLanguage()
+    return { t }
+  },
   data() {
     return {
       form: {
@@ -166,7 +178,9 @@ export default {
         message: ''
       },
       isSubmitting: false,
-      showSuccess: false
+      showSuccess: false,
+      showError: false,
+      errorMessage: ''
     }
   },
   methods: {
@@ -209,9 +223,17 @@ export default {
         });
       } catch (error) {
         console.error('Error submitting form:', error);
-        // Show error message in a more elegant way
-        const errorMessage = error.message || 'There was an error sending your message. Please try again.';
-        alert(errorMessage);
+        // Show error message in a styled component instead of alert
+        this.errorMessage = error.message || this.t('contact.errorMessage');
+        this.showError = true;
+        
+        // Scroll to error message
+        this.$nextTick(() => {
+          const errorEl = document.querySelector('.error-message');
+          if (errorEl) {
+            errorEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        });
       } finally {
         this.isSubmitting = false;
       }
@@ -899,6 +921,82 @@ textarea.form-input {
 
 .fa-spinner {
   animation: spin 1s linear infinite;
+}
+
+/* Error Message Styling */
+.error-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(238, 90, 82, 0.3);
+  z-index: 1000;
+  max-width: 400px;
+  width: 90%;
+  animation: slideInScale 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.error-content {
+  text-align: center;
+  position: relative;
+}
+
+.error-content i {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.error-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.error-content p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+.error-message .close-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.error-message .close-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+@keyframes slideInScale {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 /* Map Container */

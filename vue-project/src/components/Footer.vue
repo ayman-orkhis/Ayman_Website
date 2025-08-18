@@ -3,25 +3,25 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-section">
-          <h3 class="footer-title">Quote</h3>
+          <h3 class="footer-title">{{ t('footer.quote') }}</h3>
           <p class="footer-about" style="font-style: italic; font-size: 1.1rem; color: #ddd; text-align: center;">
-            "It always seems impossible until it's done."
+            "{{ t('footer.quoteText') }}"
           </p>
-          <p style="text-align: center; margin-top: 5px; font-weight: bold; color: #ff8c00;">Nelson Mandela</p>
+          <p style="text-align: center; margin-top: 5px; font-weight: bold; color: #ff8c00;">{{ t('footer.quoteAuthor') }}</p>
         </div>
         
         <div class="footer-section">
-          <h3 class="footer-title">Liens Rapides</h3>
+          <h3 class="footer-title">{{ t('footer.quickLinks') }}</h3>
           <ul class="footer-links">
-            <li><a href="#" class="footer-link">Home</a></li>
-            <li><a href="#about" class="footer-link">About Me</a></li>
-            <li><a href="#projects" class="footer-link">Projects</a></li>
-            <li><a href="#contact" class="footer-link">Contact</a></li>
+            <li><a href="#" class="footer-link">{{ t('nav.home') }}</a></li>
+            <li><a href="#about" class="footer-link">{{ t('nav.about') }}</a></li>
+            <li><a href="#projects" class="footer-link">{{ t('nav.projects') }}</a></li>
+            <li><a href="#contact" class="footer-link">{{ t('nav.contact') }}</a></li>
           </ul>
         </div>
         
         <div class="footer-section">
-          <h3 class="footer-title">Contact</h3>
+          <h3 class="footer-title">{{ t('nav.contact') }}</h3>
           <div class="contact-info">
             <div class="contact-item">
               <i class="fas fa-envelope"></i>
@@ -45,12 +45,12 @@
       
      <div class="footer-bottom" style="text-align:center; padding: 15px 0; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.9rem; color: #aaa;">
   <p style="margin: 5px 0;">
-    &copy; {{ currentYear }} <span style="color: #ff8c00; font-weight:bold;">Ayman Orkhis</span>. All rights reserved.
+    &copy; {{ currentYear }} <span style="color: #ff8c00; font-weight:bold;">Ayman Orkhis</span>. {{ t('footer.rights') }}.
   </p>
   <div class="footer-legal" style="margin-top: 5px;">
-    <a href="#" class="legal-link" style="color: #ccc; margin: 0 10px; text-decoration:none;">Privacy Policy</a>
+    <a href="#" class="legal-link" style="color: #ccc; margin: 0 10px; text-decoration:none;">{{ t('footer.privacy') }}</a>
     <span class="divider" style="color:#666;">|</span>
-    <a href="#" class="legal-link" style="color: #ccc; margin: 0 10px; text-decoration:none;">Terms of Use</a>
+    <a href="#" class="legal-link" style="color: #ccc; margin: 0 10px; text-decoration:none;">{{ t('footer.terms') }}</a>
   </div>
 </div>
     </div>
@@ -59,7 +59,7 @@
     <button 
       class="back-to-top" 
       @click="scrollToTop"
-      aria-label="Retour en haut"
+      :aria-label="t('footer.backToTop')"
     >
       <i class="fas fa-arrow-up"></i>
     </button>
@@ -67,8 +67,14 @@
 </template>
 
 <script>
+import { useLanguage } from '@/composables/useLanguage'
+
 export default {
   name: 'Footer',
+  setup() {
+    const { t } = useLanguage()
+    return { t }
+  },
   data() {
     return {
       showBackToTop: false,

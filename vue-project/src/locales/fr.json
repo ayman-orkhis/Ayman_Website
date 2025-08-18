@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Bonjour, je suis",
+    "name": "Ayman Orkhis",
+    "title": "",
+    "description": "Étudiant ingénieur en 3ème année à Télécom SudParis, spécialisé en IA et Science des Données. Passionné par l'apprentissage automatique, l'apprentissage profond, le NLP et la vision par ordinateur. Expérimenté en recherche et développement d'IA appliquée, avec des projets allant de la segmentation d'images médicales aux modèles de langage.",
+    "contactBtn": "Me Contacter",
+    "projectsBtn": "Voir mes Projets",
+    "uploadPlaceholder": "Ajouter une photo de profil",
+    "changePhoto": "Changer la photo"
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "quote": "❝ La seule façon de faire du bon travail est d'aimer ce que vous faites. ❞",
+    "quoteAuthor": "Steve Jobs",
+    "professionalProfile": "Profil Professionnel",
+    "name": "Ayman Orkhis",
+    "location": "Palaiseau, Île-de-France, France",
+    "phone": "+33 671-099-596",
+    "email": "orkhisayman@gmail.com",
+    "bio1": "Je suis un étudiant ingénieur en IA et Science des Données en 3ème année à Télécom SudParis, poursuivant actuellement un Master en Science des Données à l'École Polytechnique. J'ai une solide formation en mathématiques, apprentissage automatique, apprentissage profond, NLP et vision par ordinateur, avec une expérience pratique en Python, SQL et des frameworks tels que TensorFlow, PyTorch et Scikit-learn.",
+    "bio2": "À travers mes stages et projets précédents, j'ai appliqué ces compétences à des défis impactants : segmentation d'images médicales avec des architectures avancées (Mamba & MedNeXt), développement de modèles de langage pour les langues autochtones du Canada utilisant la Génération Augmentée par Récupération (RAG), et modélisation prédictive immobilière chez Avito.ma. Dans chacun de ces projets, je me suis distingué comme contributeur clé, avec plusieurs travaux reconnus par des prix et récompenses.",
+    "bio3": "Autonome, rigoureux et orienté résultats, je valorise le code propre, les expériences reproductibles et le travail d'équipe. Je maîtrise le français et l'anglais, renforcé par des expériences internationales qui ont amélioré mon adaptabilité et ma collaboration interculturelle.",
+    "downloadCV": "Télécharger mon CV",
+    "skills": "Compétences & Expertise",
+    "education": "Formation",
+    "experience": "Expérience"
+  },
+  "projects": {
+    "title": "Mes Projets",
+    "subtitle": "Découvrez mes derniers travaux et réalisations",
+    "statsProjects": "Projets",
+    "statsCategories": "Catégories",
+    "statsPassion": "Passion",
+    "filterTitle": "Explorez par catégorie",
+    "viewProject": "Voir le projet",
+    "technologiesUsed": "Technologies utilisées :",
+    "mainFeatures": "Fonctionnalités principales :",
+    "gallery": "Galerie :",
+    "viewDemo": "Voir la Démo",
+    "viewCode": "Voir le Code",
+    "categories": {
+      "all": "Tous",
+      "web": "Web",
+      "mobile": "Mobile",
+      "desktop": "Desktop",
+      "design": "Design"
+    }
+  },
+  "contact": {
+    "title": "Me Contacter",
+    "subtitle": "Travaillons ensemble",
+    "getInTouch": "Entrer en Contact",
+    "description": "Je suis toujours intéressé par de nouvelles opportunités et collaborations. N'hésitez pas à me contacter !",
+    "name": "Nom",
+    "email": "Email",
+    "subject": "Sujet",
+    "message": "Message",
+    "send": "Envoyer le Message",
+    "sending": "Envoi en cours...",
+    "sendMessage": "Envoyez-moi un Message",
+    "messageSent": "Message Envoyé !",
+    "thankYou": "Merci de m'avoir contacté. Je vous répondrai dès que possible !",
+    "location": "Localisation",
+    "phone": "Téléphone",
+    "followMe": "Suivez-moi",
+    "errorTitle": "Erreur d'Envoi",
+    "errorMessage": "Une erreur s'est produite lors de l'envoi de votre message. Veuillez vérifier vos informations et réessayer."
+  },
+  "footer": {
+    "quote": "Citation",
+    "quoteText": "Cela semble toujours impossible jusqu'à ce que ce soit fait.",
+    "quoteAuthor": "Nelson Mandela",
+    "quickLinks": "Liens Rapides",
+    "rights": "Tous droits réservés",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "backToTop": "Retour en haut",
+    "madeWith": "Fait avec",
+    "socialMedia": "Réseaux Sociaux"
+  }
+}

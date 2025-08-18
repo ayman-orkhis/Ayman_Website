@@ -1,0 +1,88 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Hello, I'm",
+    "name": "Ayman Orkhis",
+    "title": "",
+    "description": "Third-year engineering student at Télécom SudParis, specializing in AI and Data Science. Passionate about machine learning, deep learning, NLP, and computer vision. Experienced in research and applied AI development, with projects ranging from medical image segmentation to language models.",
+    "contactBtn": "Contact Me",
+    "projectsBtn": "View My Projects",
+    "uploadPlaceholder": "Add a profile photo",
+    "changePhoto": "Change photo"
+  },
+  "about": {
+    "title": "About Me",
+    "quote": "❝ The only way to do great work is to love what you do. ❞",
+    "quoteAuthor": "Steve Jobs",
+    "professionalProfile": "Professional Profile",
+    "name": "Ayman Orkhis",
+    "location": "Palaiseau, Île-de-France, France",
+    "phone": "+33 671-099-596",
+    "email": "orkhisayman@gmail.com",
+    "bio1": "I am an AI & Data Science engineering student in my 3rd year at Télécom SudParis, currently pursuing a Master's in Data Science at École Polytechnique. I have a strong foundation in mathematics, machine learning, deep learning, NLP, and computer vision, with hands-on experience in Python, SQL, and frameworks such as TensorFlow, PyTorch, and Scikit-learn.",
+    "bio2": "Through my previous internships and projects, I applied these skills to impactful challenges: medical image segmentation with advanced architectures (Mamba & MedNeXt), the development of language models for Indigenous languages of Canada using Retrieval-Augmented Generation (RAG), and predictive real-estate modeling at Avito.ma. In each of these, I distinguished myself as a key contributor, with several works recognized by awards and prizes.",
+    "bio3": "Autonomous, rigorous, and results-driven, I value clean code, reproducible experiments, and teamwork. I am fluent in French and English, strengthened by international experiences that enhanced my adaptability and cross-cultural collaboration.",
+    "downloadCV": "Download My CV",
+    "skills": "Skills & Expertise",
+    "education": "Education",
+    "experience": "Experience"
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Discover my latest work and achievements",
+    "statsProjects": "Projects",
+    "statsCategories": "Categories", 
+    "statsPassion": "Passion",
+    "filterTitle": "Explore by category",
+    "viewProject": "View project",
+    "technologiesUsed": "Technologies used:",
+    "mainFeatures": "Main features:",
+    "gallery": "Gallery:",
+    "viewDemo": "View Demo",
+    "viewCode": "View Code",
+    "categories": {
+      "all": "All",
+      "web": "Web",
+      "mobile": "Mobile",
+      "desktop": "Desktop",
+      "design": "Design"
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Let's work together",
+    "getInTouch": "Get in Touch",
+    "description": "I'm always interested in new opportunities and collaborations. Feel free to reach out!",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "sendMessage": "Send Me a Message",
+    "messageSent": "Message Sent!",
+    "thankYou": "Thank you for reaching out. I'll get back to you as soon as possible!",
+    "location": "Location",
+    "phone": "Phone",
+    "followMe": "Follow Me",
+    "errorTitle": "Error Sending Message",
+    "errorMessage": "There was an error sending your message. Please check your information and try again."
+  },
+  "footer": {
+    "quote": "Quote",
+    "quoteText": "It always seems impossible until it's done.",
+    "quoteAuthor": "Nelson Mandela",
+    "quickLinks": "Quick Links",
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "backToTop": "Back to top",
+    "madeWith": "Made with",
+    "socialMedia": "Social Media"
+  }
+}

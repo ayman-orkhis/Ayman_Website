@@ -8,10 +8,18 @@
         </span>
       </router-link>
       <div class="nav-links" :class="{ 'active': isMenuOpen }">
-        <router-link to="/" class="nav-link" @click="closeMenu">Home</router-link>
-        <router-link to="/a-propos" class="nav-link" @click="closeMenu">About Me</router-link>
-        <router-link to="/projets" class="nav-link" @click="closeMenu">Projects</router-link>
-        <router-link to="/contact" class="nav-link" @click="closeMenu" active-class="active">Contact</router-link>
+        <router-link to="/" class="nav-link" @click="closeMenu">{{ t('nav.home') }}</router-link>
+        <router-link to="/a-propos" class="nav-link" @click="closeMenu">{{ t('nav.about') }}</router-link>
+        <router-link to="/projets" class="nav-link" @click="closeMenu">{{ t('nav.projects') }}</router-link>
+        <router-link to="/contact" class="nav-link" @click="closeMenu" active-class="active">{{ t('nav.contact') }}</router-link>
+        <button 
+          @click="toggleLanguage" 
+          class="language-toggle"
+          :title="currentLanguage === 'en' ? 'Switch to French' : 'Passer à l\'anglais'"
+        >
+          <span class="flag">{{ currentLanguage === 'en' ? '🇫🇷' : '🇺🇸' }}</span>
+          <span class="lang-text">{{ currentLanguage === 'en' ? 'FR' : 'EN' }}</span>
+        </button>
       </div>
       <div class="menu-toggle" @click="toggleMenu" :class="{ 'active': isMenuOpen }" aria-label="Toggle menu">
         <span class="menu-line"></span>
@@ -23,8 +31,19 @@
 </template>
 
 <script>
+import { useLanguage } from '@/composables/useLanguage'
+
 export default {
   name: 'Navbar',
+  setup() {
+    const { currentLanguage, setLanguage, t } = useLanguage()
+    
+    return {
+      currentLanguage,
+      setLanguage,
+      t
+    }
+  },
   data() {
     return {
       isMenuOpen: false
@@ -38,6 +57,10 @@ export default {
     closeMenu() {
       this.isMenuOpen = false;
       document.body.style.overflow = '';
+    },
+    toggleLanguage() {
+      const newLang = this.currentLanguage === 'en' ? 'fr' : 'en'
+      this.setLanguage(newLang)
     },
     handleNavLinkClick(section) {
       this.closeMenu();
@@ -374,6 +397,55 @@ export default {
 
   .menu-toggle {
     display: flex;
+  }
+}
+
+/* Language Toggle Button */
+.language-toggle {
+  background: rgba(102, 126, 234, 0.1);
+  border: 1px solid rgba(102, 126, 234, 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 60px;
+  justify-content: center;
+}
+
+.language-toggle:hover {
+  background: rgba(102, 126, 234, 0.15);
+  border-color: rgba(102, 126, 234, 0.3);
+  transform: translateY(-1px);
+}
+
+.language-toggle:active {
+  transform: translateY(0);
+}
+
+.flag {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.lang-text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 992px) {
+  .language-toggle {
+    margin-left: 0;
+    margin-top: 20px;
+    justify-content: center;
+    width: 120px;
+    align-self: center;
   }
 }
 

@@ -9,11 +9,20 @@ async function bootstrap() {
   const logger = new Logger('Bootstrap');
 
   // Enable CORS
-  const frontendUrl = configService.get<string>('FRONTEND_URL', 'http://localhost:5174');
+  const frontendUrl = configService.get<string>(
+    'FRONTEND_URL',
+    'http://localhost:5173',
+  );
   app.enableCors({
-    origin: [frontendUrl, 'http://localhost:5174', 'http://127.0.0.1:5174'],
+    origin: [
+      frontendUrl,
+      'http://localhost:5173',
+      'http://localhost:5174',
+      'http://127.0.0.1:5173',
+      'http://127.0.0.1:5174',
+    ],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
-    allowedHeaders: 'Content-Type, Accept',
+    allowedHeaders: 'Content-Type, Accept, Authorization',
     credentials: true,
   });
 
@@ -33,7 +42,7 @@ async function bootstrap() {
   logger.log(`CORS enabled for: ${frontendUrl}`);
 }
 
-bootstrap().catch(err => {
+bootstrap().catch((err) => {
   console.error('Failed to start application:', err);
   process.exit(1);
 });

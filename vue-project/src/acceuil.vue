@@ -4,18 +4,18 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1 style="text-align:center; color:black;">Hello, I’m <br> <span style="color:orange; font-weight:bold;">Ayman Orkhis</span></h1>
+          <h1 style="text-align:center; color:black;">{{ t('home.greeting') }} <br> <span style="color:orange; font-weight:bold;">{{ t('home.name') }}</span></h1>
           <h2 style="text-align:center;"><br></h2>
-          <p class="intro">Third-year engineering student at Télécom SudParis, specializing in AI and Data Science. Passionate about machine learning, deep learning, NLP, and computer vision. Experienced in research and applied AI development, with projects ranging from medical image segmentation to language models.</p>
+          <p class="intro">{{ t('home.description') }}</p>
           <div class="cta-buttons">
             <router-link to="/contact" class="btn btn-primary">
-              <span class="btn-text">Contact Me</span>
+              <span class="btn-text">{{ t('home.contactBtn') }}</span>
               <span class="btn-icon">→</span>
             </router-link>
-            <a href="/projets" class="btn btn-secondary">
-              <span class="btn-text">View My Projects</span>
+            <router-link to="/projets" class="btn btn-secondary">
+              <span class="btn-text">{{ t('home.projectsBtn') }}</span>
               <span class="btn-icon">↗</span>
-            </a>
+            </router-link>
           </div>
         </div>
         <div class="hero-image">
@@ -33,10 +33,10 @@
                 <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                   <path d="M12 5v14M5 12h14" />
                 </svg>
-                <span>Ajouter une photo de profil</span>
+                <span>{{ t('home.uploadPlaceholder') }}</span>
               </div>
               <div class="image-overlay">
-                <span>Changer la photo</span>
+                <span>{{ t('home.changePhoto') }}</span>
               </div>
             </div>
             <div class="shape shape-1"></div>
@@ -50,9 +50,14 @@
 
 <script>
 import meImage from '@/assets/me.jpeg';
+import { useLanguage } from '@/composables/useLanguage'
 
 export default {
   name: 'Acceuil',
+  setup() {
+    const { t } = useLanguage()
+    return { t }
+  },
   data() {
     return {
       imagePreview: meImage,

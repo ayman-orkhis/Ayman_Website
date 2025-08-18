@@ -14,22 +14,22 @@
       <div class="container">
         <div class="hero-content">
           <h1 class="hero-title">
-            <span class="title-word">Mes</span>
-            <span class="title-word highlight">Projets</span>
+            <span class="title-word">{{ t('projects.title').split(' ')[0] }}</span>
+            <span class="title-word highlight">{{ t('projects.title').split(' ')[1] }}</span>
           </h1>
-          <p class="hero-subtitle">Découvrez mes réalisations et projets créatifs</p>
+          <p class="hero-subtitle">{{ t('projects.subtitle') }}</p>
           <div class="hero-stats">
             <div class="stat-item">
               <div class="stat-number">{{ projects.length }}+</div>
-              <div class="stat-label">Projets</div>
+              <div class="stat-label">{{ t('projects.statsProjects') }}</div>
             </div>
             <div class="stat-item">
               <div class="stat-number">{{ categories.length - 1 }}</div>
-              <div class="stat-label">Catégories</div>
+              <div class="stat-label">{{ t('projects.statsCategories') }}</div>
             </div>
             <div class="stat-item">
               <div class="stat-number">100%</div>
-              <div class="stat-label">Passion</div>
+              <div class="stat-label">{{ t('projects.statsPassion') }}</div>
             </div>
           </div>
         </div>
@@ -41,7 +41,7 @@
       <div class="container">
         <!-- Filter Buttons -->
         <div class="filter-section">
-          <h2 class="section-title">Explorez par catégorie</h2>
+          <h2 class="section-title">{{ t('projects.filterTitle') }}</h2>
           <div class="filter-buttons">
             <button 
               v-for="category in categories" 
@@ -50,7 +50,7 @@
               :class="['filter-btn', { active: activeFilter === category }]"
             >
               <span class="filter-icon">{{ getCategoryIcon(category) }}</span>
-              {{ category }}
+              {{ t(`projects.categories.${category.toLowerCase()}`) }}
             </button>
           </div>
         </div>
@@ -77,7 +77,7 @@
                       {{ tech }}
                     </span>
                   </div>
-                  <div class="view-project-btn">Voir le projet</div>
+                  <div class="view-project-btn">{{ t('projects.viewProject') }}</div>
                 </div>
               </div>
             </div>
@@ -122,7 +122,7 @@
           <p class="modal-description">{{ selectedProject.fullDescription }}</p>
           
           <div class="modal-tech">
-            <h4>Technologies utilisées :</h4>
+            <h4>{{ t('projects.technologiesUsed') }}</h4>
             <div class="tech-tags">
               <span v-for="tech in selectedProject.technologies" :key="tech" class="tech-tag">
                 {{ tech }}
@@ -131,14 +131,14 @@
           </div>
 
           <div class="modal-features" v-if="selectedProject.features">
-            <h4>Fonctionnalités principales :</h4>
+            <h4>{{ t('projects.mainFeatures') }}</h4>
             <ul>
               <li v-for="feature in selectedProject.features" :key="feature">{{ feature }}</li>
             </ul>
           </div>
 
           <div class="modal-gallery" v-if="selectedProject.gallery">
-            <h4>Galerie :</h4>
+            <h4>{{ t('projects.gallery') }}</h4>
             <div class="gallery-grid">
               <img 
                 v-for="(image, index) in selectedProject.gallery" 
@@ -152,10 +152,10 @@
 
           <div class="modal-links">
             <a v-if="selectedProject.liveUrl" :href="selectedProject.liveUrl" target="_blank" class="modal-link primary">
-              <i class="fas fa-external-link-alt"></i> Voir le projet
+              <i class="fas fa-external-link-alt"></i> {{ t('projects.viewDemo') }}
             </a>
             <a v-if="selectedProject.githubUrl" :href="selectedProject.githubUrl" target="_blank" class="modal-link secondary">
-              <i class="fab fa-github"></i> Code source
+              <i class="fab fa-github"></i> {{ t('projects.viewCode') }}
             </a>
           </div>
         </div>
@@ -165,13 +165,19 @@
 </template>
 
 <script>
+import { useLanguage } from '@/composables/useLanguage'
+
 export default {
   name: 'Projects',
+  setup() {
+    const { t } = useLanguage()
+    return { t }
+  },
   data() {
     return {
-      activeFilter: 'Tous',
+      activeFilter: 'All',
       selectedProject: null,
-      categories: ['Tous', 'Web', 'Mobile', 'Desktop', 'Design'],
+      categories: ['All', 'Web', 'Mobile', 'Desktop', 'Design'],
       projects: [
         {
           id: 1,
@@ -250,7 +256,7 @@ export default {
   },
   computed: {
     filteredProjects() {
-      if (this.activeFilter === 'Tous') {
+      if (this.activeFilter === 'All') {
         return this.projects;
       }
       return this.projects.filter(project => project.category === this.activeFilter);
@@ -262,7 +268,7 @@ export default {
     },
     getCategoryIcon(category) {
       const icons = {
-        'Tous': '🌟',
+        'All': '🌟',
         'Web': '🌐',
         'Mobile': '📱',
         'Desktop': '💻',

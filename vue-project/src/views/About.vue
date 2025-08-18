@@ -4,11 +4,11 @@
     <section class="about-hero">
       <div class="container">
         <div class="about-hero-content">
-          <h1 class="section-title">About Me</h1>
+          <h1 class="section-title">{{ t('about.title') }}</h1>
           <p style="font-style: italic; font-size: 1.6rem; line-height: 1.6; color: #333; margin-top: 30px; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">
-            ❝ The only way to do great work is to love what you do. ❞
+            {{ t('about.quote') }}
             <br>
-            <span style="font-weight: bold; color: #ff8c00; font-size: 1.2rem;"> Steve Jobs</span>
+            <span style="font-weight: bold; color: #ff8c00; font-size: 1.2rem;">{{ t('about.quoteAuthor') }}</span>
             </p>
         </div>
       </div>
@@ -30,51 +30,26 @@
             </div>
           </div>
           <div class="about-content">
-            <h2 class="section-subtitle">Professionnel Profil</h2>
+            <h2 class="section-subtitle">{{ t('about.professionalProfile') }}</h2>
             <div class="contact-info">
-              <h3>Ayman Orkhis</h3>
+              <h3>{{ t('about.name') }}</h3>
               <p class="contact-detail">
-                <i class="fas fa-map-marker-alt"></i> Palaiseau, Île-de-France, France
+                <i class="fas fa-map-marker-alt"></i> {{ t('about.location') }}
               </p>
               <p class="contact-detail">
-                <i class="fas fa-phone"></i> +33 671-099-596
+                <i class="fas fa-phone"></i> {{ t('about.phone') }}
               </p>
               <p class="contact-detail">
-                <i class="fas fa-envelope"></i> orkhisayman@gmail.com
+                <i class="fas fa-envelope"></i> {{ t('about.email') }}
               </p>
             </div>
             
-            <p class="about-text">
-              I am an <span style="font-weight:700;">AI & Data Science engineering student</span> in my 3rd year at
-              <span style="font-weight:700; color:#ff8c00;">Télécom SudParis</span>, currently pursuing a
-              <span style="font-weight:700; color:#ff8c00;">Master’s in Data Science at École Polytechnique</span>.
-              I have a strong foundation in <span style="font-weight:700;">mathematics, machine learning, deep learning, NLP, and computer vision</span>,
-              with hands-on experience in <span style="font-weight:700;">Python</span>, <span style="font-weight:700;">SQL</span>, and frameworks such as
-              <span style="font-weight:700;">TensorFlow</span>, <span style="font-weight:700;">PyTorch</span>, and <span style="font-weight:700;">Scikit-learn</span>.
-            </p>
-
-            <p class="about-text">
-              Through my previous <span style="font-weight:700;">internships and projects</span>, I applied these skills to impactful challenges:
-              <span style="font-weight:700;">medical image segmentation</span> with advanced architectures
-              (<span style="font-style:italic;">Mamba & MedNeXt</span>), the development of
-              <span style="font-weight:700;">language models for Indigenous languages of Canada</span> using
-              <span style="font-weight:700;">Retrieval-Augmented Generation (RAG)</span>, and
-              <span style="font-weight:700;">predictive real-estate modeling</span> at <span style="font-weight:700;">Avito.ma</span>.
-              In each of these, I distinguished myself as a <span style="font-weight:700;">key contributor</span>, with several works
-              <span style="font-weight:700;">recognized by awards and prizes</span>.
-            </p>
-
-            <p class="about-text">
-              <span style="font-weight:700;">Autonomous, rigorous, and results-driven</span>, I value
-              <span style="font-weight:700;">clean code</span>, <span style="font-weight:700;">reproducible experiments</span>, and
-              <span style="font-weight:700;">teamwork</span>. I am fluent in <span style="font-weight:700;">French</span> and
-              <span style="font-weight:700;">English</span>, strengthened by <span style="font-weight:700;">international experiences</span> that
-              enhanced my adaptability and cross-cultural collaboration.
-            </p>
-
+            <p class="about-text" v-html="t('about.bio1')"></p>
+            <p class="about-text" v-html="t('about.bio2')"></p>
+            <p class="about-text" v-html="t('about.bio3')"></p>
             
             <a href="#" @click="downloadCV" class="cv-download-btn">
-              <span class="cv-btn-text">Download My CV</span>
+              <span class="cv-btn-text">{{ t('about.downloadCV') }}</span>
               <span class="cv-btn-icon"><i class="fas fa-download"></i></span>
             </a>
           </div>
@@ -294,8 +269,14 @@
 </template>
 
 <script>
+import { useLanguage } from '@/composables/useLanguage'
+
 export default {
   name: 'About',
+  setup() {
+    const { t } = useLanguage()
+    return { t }
+  },
   methods: {
     downloadCV() {
       // Create a temporary link element
