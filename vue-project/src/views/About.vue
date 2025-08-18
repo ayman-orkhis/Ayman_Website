@@ -5,11 +5,11 @@
       <div class="container">
         <div class="about-hero-content">
           <h1 class="section-title">{{ t('about.title') }}</h1>
-          <p style="font-style: italic; font-size: 1.6rem; line-height: 1.6; color: #333; margin-top: 30px; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto;">
+          <p class="hero-quote">
             {{ t('about.quote') }}
             <br>
-            <span style="font-weight: bold; color: #ff8c00; font-size: 1.2rem;">{{ t('about.quoteAuthor') }}</span>
-            </p>
+            <span class="quote-author">{{ t('about.quoteAuthor') }}</span>
+          </p>
         </div>
       </div>
       <div class="shape-divider">
@@ -492,11 +492,14 @@ export default {
 
 /* About Section */
 .about-section {
-  padding: 100px 0;
-  background: #fff;
-  width: 100%;
-  left: 0;
-  right: 0;
+  padding: 120px 0;
+  background: var(--bg-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.dark .about-section {
+  background: var(--bg-color);
 }
 
 .about-grid {
@@ -563,6 +566,10 @@ export default {
   font-weight: 700;
 }
 
+.dark .contact-info h3 {
+  color: var(--text-color);
+}
+
 .contact-detail {
   display: flex;
   align-items: center;
@@ -610,10 +617,72 @@ export default {
 /* Skills Section */
 .skills-section {
   padding: 100px 0;
-  background: #f8faff;
+  background: var(--bg-color);
   width: 100%;
   left: 0;
   right: 0;
+}
+
+.dark .skills-section {
+  background: #2d3748;
+}
+
+.dark .skill-category {
+  background: var(--card-bg);
+  box-shadow: 0 10px 30px var(--shadow);
+}
+
+.dark .section-title,
+.dark .section-subtitle,
+.dark .skill-category-title,
+.dark .skill-name,
+.dark .info-label {
+  color: var(--text-color);
+}
+
+.dark .about-text,
+.dark .contact-detail,
+.dark .info-value {
+  color: #cbd5e0;
+}
+
+.dark .contact-info {
+  background: rgba(102, 126, 234, 0.1);
+  border-left-color: #667eea;
+}
+
+.dark .about-hero {
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+}
+
+.hero-quote {
+  font-style: italic;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin-top: 30px;
+  text-align: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quote-author {
+  font-weight: bold;
+  color: #ff8c00;
+  font-size: 1.2rem;
+}
+
+.dark .hero-quote {
+  color: var(--text-color);
+}
+
+.dark .quote-author {
+  color: #ffa500;
+}
+
+.dark .shape-fill {
+  fill: var(--bg-color);
 }
 
 .skills-grid {
@@ -793,7 +862,7 @@ export default {
 /* Experience Section */
 .experience-section {
   padding: 100px 0;
-  background: #f8faff;
+  background: var(--bg-color);
   width: 100%;
   left: 0;
   right: 0;
@@ -844,13 +913,18 @@ export default {
 }
 
 .timeline-content {
-  background: #fff;
+  background: var(--card-bg);
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
   position: relative;
   border-left: 3px solid var(--primary-color);
+}
+
+.dark .timeline-content {
+  background: var(--card-bg);
+  box-shadow: 0 10px 30px var(--shadow);
 }
 
 .timeline-content:hover {

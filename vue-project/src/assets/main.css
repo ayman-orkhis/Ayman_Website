@@ -1,35 +1,52 @@
 @import './base.css';
 
+/* CSS Variables for light and dark themes */
+:root {
+  --primary-color: #667eea;
+  --secondary-color: #764ba2;
+  --dark-color: #2d3748;
+  --light-color: #f7fafc;
+  --text-color: #2d3748;
+  --bg-color: #ffffff;
+  --card-bg: #ffffff;
+  --border-color: #e2e8f0;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  --text-color: #e2e8f0;
+  --bg-color: #1a202c;
+  --card-bg: #2d3748;
+  --border-color: #4a5568;
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
   font-weight: normal;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 a,
 .green {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
+  color: var(--primary-color);
   transition: 0.4s;
   padding: 3px;
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    background-color: rgba(102, 126, 234, 0.2);
   }
 }

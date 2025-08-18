@@ -13,6 +13,13 @@
         <router-link to="/projets" class="nav-link" @click="closeMenu">{{ t('nav.projects') }}</router-link>
         <router-link to="/contact" class="nav-link" @click="closeMenu" active-class="active">{{ t('nav.contact') }}</router-link>
         <button 
+          @click="toggleDarkMode" 
+          class="dark-mode-toggle"
+          :title="isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'"
+        >
+          <i class="fas" :class="isDarkMode ? 'fa-sun' : 'fa-moon'"></i>
+        </button>
+        <button 
           @click="toggleLanguage" 
           class="language-toggle"
           :title="currentLanguage === 'en' ? 'Switch to French' : 'Passer à l\'anglais'"
@@ -32,16 +39,20 @@
 
 <script>
 import { useLanguage } from '@/composables/useLanguage'
+import { useDarkMode } from '@/composables/useDarkMode'
 
 export default {
   name: 'Navbar',
   setup() {
     const { currentLanguage, setLanguage, t } = useLanguage()
+    const { isDarkMode, toggleDarkMode } = useDarkMode()
     
     return {
       currentLanguage,
       setLanguage,
-      t
+      t,
+      isDarkMode,
+      toggleDarkMode
     }
   },
   data() {
@@ -439,6 +450,33 @@ export default {
   letter-spacing: 0.5px;
 }
 
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+  background: rgba(102, 126, 234, 0.1);
+  border: 1px solid rgba(102, 126, 234, 0.2);
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: var(--primary-color);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 36px;
+}
+
+.dark-mode-toggle:hover {
+  background: rgba(102, 126, 234, 0.15);
+  border-color: rgba(102, 126, 234, 0.3);
+  transform: translateY(-1px);
+}
+
+.dark-mode-toggle:active {
+  transform: translateY(0);
+}
+
 @media (max-width: 992px) {
   .language-toggle {
     margin-left: 0;
@@ -449,24 +487,67 @@ export default {
   }
 }
 
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-  .navbar {
-    background: rgba(20, 20, 30, 0.95);
+/* Dark mode styles */
+.dark .navbar {
+  background: rgba(20, 20, 30, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dark .nav-link {
+  color: #e2e8f0;
+}
+
+.dark .nav-link:hover {
+  color: #667eea;
+}
+
+.dark .router-link-active {
+  color: #667eea;
+  background: rgba(102, 126, 234, 0.2);
+}
+
+.dark .logo-first {
+  color: #8b9cf7;
+}
+
+.dark .logo-last {
+  color: #9f7aea;
+}
+
+.dark .menu-line {
+  background-color: #e2e8f0;
+}
+
+.dark .language-toggle {
+  background: rgba(102, 126, 234, 0.2);
+  border-color: rgba(102, 126, 234, 0.3);
+  color: #8b9cf7;
+}
+
+.dark .language-toggle:hover {
+  background: rgba(102, 126, 234, 0.3);
+  border-color: rgba(102, 126, 234, 0.4);
+}
+
+.dark .dark-mode-toggle {
+  background: rgba(102, 126, 234, 0.2);
+  border-color: rgba(102, 126, 234, 0.3);
+  color: #8b9cf7;
+}
+
+.dark .dark-mode-toggle:hover {
+  background: rgba(102, 126, 234, 0.3);
+  border-color: rgba(102, 126, 234, 0.4);
+}
+
+@media (max-width: 992px) {
+  .dark .nav-links {
+    background: #1a1a2e;
   }
   
-  .nav-link {
-    color: #f0f0f0;
-  }
-  
-  .menu-toggle span {
-    background-color: #f0f0f0;
-  }
-  
-  @media (max-width: 992px) {
-    .nav-links {
-      background: #1a1a2e;
-    }
+  .dark .menu-toggle {
+    background: rgba(26, 26, 46, 0.9);
+    border-color: rgba(102, 126, 234, 0.3);
   }
 }
 </style>

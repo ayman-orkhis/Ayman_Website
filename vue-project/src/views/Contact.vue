@@ -267,14 +267,76 @@ export default {
 /* Base Styles */
 .contact-page {
   min-height: 100vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background: #f8f9fa;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
   overflow-x: hidden;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-  color: #333;
-  line-height: 1.6;
+  background: var(--bg-color);
+}
+
+.dark .contact-page {
+  background: var(--bg-color);
+}
+
+.dark .contact-hero {
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+}
+
+.dark .contact-hero h1,
+.dark .contact-hero .subtitle {
+  color: var(--text-color);
+}
+
+.dark .contact-section {
+  background: var(--bg-color);
+}
+
+.dark .contact-form,
+.dark .contact-info {
+  background: var(--card-bg);
+  box-shadow: 0 20px 50px var(--shadow);
+}
+
+.dark .contact-form h2,
+.dark .contact-info h2,
+.dark .contact-card h3 {
+  color: var(--text-color);
+}
+
+.dark .form-label {
+  color: var(--text-color);
+}
+
+.dark .form-input,
+.dark .form-textarea {
+  background: var(--bg-color);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+.dark .form-input:focus,
+.dark .form-textarea:focus {
+  border-color: var(--primary-color);
+  background: var(--bg-color);
+}
+
+.dark .contact-card {
+  background: rgba(102, 126, 234, 0.1);
+  border-left-color: var(--primary-color);
+}
+
+.dark .contact-card p {
+  color: #cbd5e0;
+}
+
+.dark .social-link {
+  background: rgba(102, 126, 234, 0.1);
+  color: var(--text-color);
+}
+
+.dark .social-link:hover {
+  background: var(--primary-color);
+  color: white;
 }
 
 /* Hero Section */
@@ -326,10 +388,14 @@ export default {
   width: 100%;
   max-width: 100%;
   margin: 0;
-  background: white;
+  background: var(--bg-color);
   padding: 80px 0;
   position: relative;
   z-index: 1;
+}
+
+.dark .contact-container {
+  background: var(--bg-color);
 }
 
 .contact-content {
@@ -599,10 +665,21 @@ textarea.form-input {
   transition: all 0.3s ease;
   pointer-events: none;
   transform-origin: left center;
-  background: white;
+  background: var(--bg-color);
   padding: 0 5px;
   margin-left: -5px;
   border-radius: 4px;
+}
+
+.dark .form-label {
+  background: var(--bg-color);
+  color: #a0aec0;
+}
+
+.dark .form-group.focused .form-label,
+.dark .form-input:not(:placeholder-shown) + .form-label {
+  color: #667eea;
+  background: var(--bg-color);
 }
 
 .form-group.focused .form-label,

@@ -308,6 +308,68 @@ export default {
 .projects-page {
   min-height: 100vh;
   padding-top: 70px;
+  background: var(--bg-color);
+}
+
+.dark .projects-page {
+  background: var(--bg-color);
+}
+
+.dark .hero-section {
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+}
+
+.dark .hero-title,
+.dark .section-title {
+  color: var(--text-color);
+}
+
+.dark .hero-subtitle,
+.dark .section-description {
+  color: #cbd5e0;
+}
+
+.dark .project-card {
+  background: var(--card-bg);
+  box-shadow: 0 10px 30px var(--shadow);
+  border-color: var(--border-color);
+}
+
+.dark .project-card:hover {
+  box-shadow: 0 20px 50px var(--shadow);
+}
+
+.dark .project-title {
+  color: var(--text-color);
+}
+
+.dark .project-description {
+  color: #cbd5e0;
+}
+
+.dark .filter-btn {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+.dark .filter-btn:hover,
+.dark .filter-btn.active {
+  background: var(--primary-color);
+  color: white;
+}
+
+.dark .modal-content {
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+.dark .modal-title {
+  color: var(--text-color);
+}
+
+.dark .modal-description {
+  color: #cbd5e0;
 }
 
 /* Hero Section */
@@ -504,8 +566,12 @@ export default {
 /* Projects Section */
 .projects-section {
   padding: 100px 20px;
-  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 50%, #f0f4ff 100%);
+  background: var(--bg-color);
   position: relative;
+}
+
+.dark .projects-section {
+  background: var(--bg-color);
 }
 
 .projects-section::before {
