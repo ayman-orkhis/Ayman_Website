@@ -9,29 +9,109 @@
     "greeting": "Hello, I'm",
     "name": "Ayman Orkhis",
     "title": "",
-    "description": "Third-year engineering student at Télécom SudParis, specializing in AI and Data Science. Passionate about machine learning, deep learning, NLP, and computer vision. Experienced in research and applied AI development, with projects ranging from medical image segmentation to language models.",
+    "description": "Third-year general engineering student at Télécom SudParis, specializing in AI and Data Science. Passionate about machine learning, deep learning, NLP, and computer vision. Experienced in research and applied AI development, with projects ranging from medical image segmentation to language models.",
     "contactBtn": "Contact Me",
     "projectsBtn": "View My Projects",
     "uploadPlaceholder": "Add a profile photo",
     "changePhoto": "Change photo"
   },
   "about": {
-    "title": "About Me",
-    "quote": "❝ The only way to do great work is to love what you do. ❞",
-    "quoteAuthor": "Steve Jobs",
-    "professionalProfile": "Professional Profile",
-    "name": "Ayman Orkhis",
-    "location": "Palaiseau, Île-de-France, France",
-    "phone": "+33 671-099-596",
-    "email": "orkhisayman@gmail.com",
-    "bio1": "I am an AI & Data Science engineering student in my 3rd year at Télécom SudParis, currently pursuing a Master's in Data Science at École Polytechnique. I have a strong foundation in mathematics, machine learning, deep learning, NLP, and computer vision, with hands-on experience in Python, SQL, and frameworks such as TensorFlow, PyTorch, and Scikit-learn.",
-    "bio2": "Through my previous internships and projects, I applied these skills to impactful challenges: medical image segmentation with advanced architectures (Mamba & MedNeXt), the development of language models for Indigenous languages of Canada using Retrieval-Augmented Generation (RAG), and predictive real-estate modeling at Avito.ma. In each of these, I distinguished myself as a key contributor, with several works recognized by awards and prizes.",
-    "bio3": "Autonomous, rigorous, and results-driven, I value clean code, reproducible experiments, and teamwork. I am fluent in French and English, strengthened by international experiences that enhanced my adaptability and cross-cultural collaboration.",
-    "downloadCV": "Download My CV",
-    "skills": "Skills & Expertise",
-    "education": "Education",
-    "experience": "Experience"
+  "title": "About Me",
+  "quote": "❝ The only way to do great work is to love what you do. ❞",
+  "quoteAuthor": "Steve Jobs",
+  "professionalProfile": "Professional Profile",
+  "name": "Ayman Orkhis",
+  "location": "Palaiseau, Île-de-France, France",
+  "phone": "+33 671-099-596",
+  "email": "orkhisayman@gmail.com",
+  "bio1": "I am an AI & Data Science engineering student in my 3rd year at Télécom SudParis, currently pursuing a Master's in Data Science at École Polytechnique. I have a strong foundation in mathematics, machine learning, deep learning, NLP, and computer vision, with hands-on experience in Python, SQL, and frameworks such as TensorFlow, PyTorch, and Scikit-learn.",
+  "bio2": "Through my previous internships and projects, I applied these skills to impactful challenges: medical image segmentation with advanced architectures (Mamba & MedNeXt), the development of language models for Indigenous languages of Canada using Retrieval-Augmented Generation (RAG), and predictive real-estate modeling at Avito.ma. In each of these, I distinguished myself as a key contributor, with several works recognized by awards and prizes.",
+  "bio3": "Autonomous, rigorous, and results-driven, I value clean code, reproducible experiments, and teamwork. I am fluent in French and English, strengthened by international experiences that enhanced my adaptability and cross-cultural collaboration.",
+  "downloadCV": "Download My CV",
+  "skills": "Skills & Expertise",
+  "education": "Education",
+  "experience": "Experience",
+
+  "skillsSection": {
+    "title": "My Skills",
+    "subtitle": "Here are some of the technologies I work with",
+    "technical": "Technical Skills",
+    "categories": {
+      "languages": {
+        "title": "Languages",
+        "items": ["JavaScript", "TypeScript", "Python", "Java", "SQL"]
+      },
+      "frameworks": {
+        "title": "Frameworks/Libraries",
+        "items": ["NestJS", "TensorFlow", "Vue.js", "PyTorch", "Vite", "nnU-Net v1 & v2", "Scikit-learn", "Pandas", "Matplotlib", "NumPy", "OpenCV", "Keras"]
+      },
+      "databases": {
+        "title": "Databases",
+        "items": ["MySQL", "MongoDB"]
+      },
+      "tools": {
+        "title": "Tools",
+        "items": ["Git", "GitHub", "Jupyter", "VS Code", "Eclipse"]
+      }
+    },
+    "softSkillsTitle": "Soft Skills",
+    "softSkills": [
+      "Excellent communication",
+      "Teamwork and cross-functional collaboration",
+      "Autonomy and initiative",
+      "Analytical mindset and problem solving",
+      "Adaptability and fast learning",
+      "Effective time and priority management"
+    ],
+    "languagesTitle": "Languages",
+    "spoken": [
+      { "name": "French", "level": "Fluent" },
+      { "name": "English", "level": "Professional" }
+    ]
   },
+
+  "experienceSection": {
+    "title": "Professional Experience",
+    "subtitle": "My career path and achievements",
+    "items": [
+      {
+        "date": "Jul. 2025 – Aug. 2025",
+        "role": "NLP / LLM Intern",
+        "company": "ILLS Lab (Mila) – ÉTS | Montreal, QC, Canada",
+        "bullets": [
+          "Developed a chatbot for Indigenous languages of Canada",
+          "Integrated local data and built a RAG system",
+          "Monitored/evaluated EDI policies via retrieval-augmented generation",
+          "Presented at the Ashukan Institute on AI-related biases and harms"
+        ]
+      },
+      {
+        "date": "Dec. 2024 – Present",
+        "role": "Head of Research & AI Team Member",
+        "company": "Kryptosphere | Évry-Courcouronnes, France",
+        "bullets": [
+          "Organized monthly trainings on advanced AI applications",
+          "Tech watch and scoping of internal mini-projects",
+          "Presented and popularized recent AI research papers to the community"
+        ]
+      },
+      {
+        "date": "Jul. 2024 – Aug. 2024",
+        "role": "Data Intern",
+        "company": "Avito.ma | Casablanca, Morocco",
+        "bullets": [
+          "Apartment price prediction using Linear Regression, Random Forest, and XGBoost",
+          "EDA and feature engineering (location, area, amenities) on large Avito datasets",
+          "Preprocessing: missing values, encoding, normalization; scikit-learn pipelines",
+          "Evaluation with RMSE/R² and +75% accuracy vs. baselines",
+          "Visualized results (Matplotlib, Seaborn) and delivered recommendations"
+        ]
+      }
+    ]
+  }
+},
+
+  
   "projects": {
     "title": "My Projects",
     "subtitle": "Discover my latest work and achievements",
@@ -55,7 +135,7 @@
   },
   "contact": {
     "title": "Contact Me",
-    "subtitle": "Let's work together",
+    "subtitle": "Reach out for job opportunities or collaborations.",
     "getInTouch": "Get in Touch",
     "description": "I'm always interested in new opportunities and collaborations. Feel free to reach out!",
     "name": "Name",

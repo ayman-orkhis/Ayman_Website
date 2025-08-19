@@ -25,7 +25,7 @@
         <div class="about-grid">
           <div class="about-image">
             <div class="image-wrapper">
-              <img src="@/assets/me.jpeg" alt="Anas Orkhis" class="profile-img">
+              <img src="@/assets/me.jpeg" alt="Ayman Orkhis" class="profile-img">
               <div class="image-overlay"></div>
             </div>
           </div>
@@ -60,12 +60,12 @@
     <!-- Skills Section -->
     <section class="skills-section">
       <div class="container">
-        <h2 class="section-title text-center">Mes Compétences</h2>
-        <p class="section-description text-center">Voici quelques-unes des technologies avec lesquelles je travaille</p>
+        <h2 class="section-title text-center">{{ t('about.skillsSection.title') }}</h2>
+        <p class="section-description text-center">{{ t('about.skillsSection.subtitle') }}</p>
         
         <div class="skills-grid">
           <div class="skill-category">
-            <h3 class="skill-category-title">Compétences Techniques</h3>
+            <h3 class="skill-category-title">{{ t('about.skillsSection.technical') }}</h3>
             <div class="skills-list">
               <div class="skill-item">
                 <div class="skill-info">
@@ -75,7 +75,7 @@
                   <span class="skill-tag">JavaScript</span>
                   <span class="skill-tag">TypeScript</span>
                   <span class="skill-tag">Python</span>
-                  <span class="skill-tag">C# (.NET MVC)</span>
+                  <span class="skill-tag">Java</span>
                   <span class="skill-tag">SQL</span>
                 </div>
               </div>
@@ -86,28 +86,34 @@
                 </div>
                 <div class="skill-tags">
                   <span class="skill-tag">NestJS</span>
-                  <span class="skill-tag">Express.js</span>
+                  <span class="skill-tag">Tensorflow</span>
                   <span class="skill-tag">Vue.js</span>
-                  <span class="skill-tag">Next.js</span>
-                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">Pytorch</span>
                   <span class="skill-tag">Vite</span>
+                  <span class="skill-tag">nnUnet v1&2</span>
+                  <span class="skill-tag">Scikit-learn</span>
+                  <span class="skill-tag">Pandas</span>
+                  <span class="skill-tag">Matplotlib</span>
+                  <span class="skill-tag">Numpy</span>
+                  <span class="skill-tag">OpenCV</span>
+                  <span class="skill-tag">Keras</span>
                 </div>
               </div>
               
               <div class="skill-item">
                 <div class="skill-info">
-                  <span class="skill-name">Bases de données</span>
+                  <span class="skill-name">Database</span>
                 </div>
                 <div class="skill-tags">
-                  <span class="skill-tag">PostgreSQL</span>
+                  <!-- Skills Section<span class="skill-tag">PostgreSQL</span>-->
                   <span class="skill-tag">MySQL</span>
-                  <span class="skill-tag">Firestore</span>
+                  <!-- Skills Section <span class="skill-tag">Firestore</span>-->
                   <span class="skill-tag">MongoDB</span>
                 </div>
               </div>
               
-              <div class="skill-item">
-                <div class="skill-info">
+              <!-- Skills Section><div class="skill-item">
+                  <div class="skill-info">
                   <span class="skill-name">Cloud/DevOps</span>
                 </div>
                 <div class="skill-tags">
@@ -126,32 +132,32 @@
                   <span class="skill-tag">SOQL</span>
                   <span class="skill-tag">Flow Builder</span>
                 </div>
-              </div>
+              </div>-->
               
               <div class="skill-item">
                 <div class="skill-info">
-                  <span class="skill-name">Outils</span>
+                  <span class="skill-name">Tools</span>
                 </div>
                 <div class="skill-tags">
                   <span class="skill-tag">Git</span>
                   <span class="skill-tag">GitHub</span>
-                  <span class="skill-tag">Jira</span>
+                  <span class="skill-tag">jupyter</span>
                   <span class="skill-tag">VS Code</span>
-                  <span class="skill-tag">Postman</span>
+                  <span class="skill-tag">Eclipse</span>
                 </div>
               </div>
-              
+             
               <div class="skill-item">
                 <div class="skill-info">
-                  <span class="skill-name">Tests & QA</span>
+                  <!-- Skills Section><span class="skill-name">Tests & QA</span>-->
                 </div>
-                <div class="skill-tags">
+                <!-- Skills Section><div class="skill-tags">
                   <span class="skill-tag">Cypress</span>
                   <span class="skill-tag">Jest</span>
                   <span class="skill-tag">Tests Unitaires</span>
                   <span class="skill-tag">Tests E2E</span>
                   <span class="skill-tag">TDD</span>
-                </div>
+                </div>-->
               </div>
             </div>
           </div>
@@ -212,18 +218,14 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <div class="timeline-date">Mai 2024 – Présent</div>
-              <h3 class="timeline-title">Développeur Full-Stack</h3>
-              <h4 class="timeline-company">Neova ERP | Montréal, Canada</h4>
+              <div class="timeline-date">Juil. 2025 – Août 2025</div>
+              <h3 class="timeline-title">Stagiaire NLP / LLM</h3>
+              <h4 class="timeline-company">Laboratoire ILLS (Mila) – ÉTS | Montréal, QC, Canada</h4>
               <ul class="experience-list">
-                <li>Développement de composants front-end modulaires réutilisables</li>
-                <li>Création de modules applicatifs indépendants (micro-frontends) avec Vue-like / React</li>
-                <li>Amélioration continue de l'architecture et performance de la plateforme</li>
-                <li>Maintenance active de solutions existantes (debug, refactorisation, support)</li>
-                <li>Participation Agile (Scrum), pair programming, revues de code</li>
-                <li>Intégration de services métiers backend avec NestJS + base MySQL</li>
-                <li>Rédaction de tests unitaires et E2E (Jest, Cypress) et documentation technique</li>
-                <li>Encadrement et supervision de stagiaires pendant 5 mois (accompagnement technique et intégration dans l'équipe Agile)</li>
+                <li>Développement d’un Chatbot pour les langues autochtones canadiennes</li>
+                <li>Intégration de données locales et mise en place d’un système RAG</li>
+                <li>Suivi/évaluation des politiques EDI via génération augmentée par la recherche</li>
+                <li>Présentation à l’Institut Ashukan sur les biais et préjudices introduits par l’IA</li>
               </ul>
             </div>
           </div>
@@ -232,16 +234,13 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <div class="timeline-date">Mai 2022 – Avril 2024</div>
-              <h3 class="timeline-title">Développeur Full-Stack React/NestJS</h3>
-              <h4 class="timeline-company">Wirkn | Montréal, Canada</h4>
+              <div class="timeline-date">Déc. 2024 – Présent</div>
+              <h3 class="timeline-title">Responsable du Pôle Recherche & Membre de l'Équipe IA</h3>
+              <h4 class="timeline-company">Kryptosphere | Évry-Courcouronnes, France</h4>
               <ul class="experience-list">
-                <li>Développement SPA avec React, SSR via Next.js et Vite</li>
-                <li>Utilisation des hooks modernes, gestion d'état via Context API</li>
-                <li>Intégration backend via NestJS, déploiement via Docker + GCP</li>
-                <li>Maintien et évolution de modules métiers complexes</li>
-                <li>Utilisation avancée de Git + GitHub Actions (CI/CD)</li>
-                <li>Collaboration étroite avec les designers pour une UX fluide</li>
+                <li>Organisation de formations mensuelles autour des applications avancées de l’IA</li>
+                <li>Veille technologique et cadrage de mini-projets internes</li>
+                <li>Présentation et vulgarisation de papiers scientifiques récents en IA auprès de la communauté</li>
               </ul>
             </div>
           </div>
@@ -250,15 +249,15 @@
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <div class="timeline-date">Juil. 2017 – Sept. 2018</div>
-              <h3 class="timeline-title">Développeur Stagiaire Salesforce-D&A</h3>
-              <h4 class="timeline-company">Stage Salesforce | Casablanca, Maroc</h4>
+              <div class="timeline-date">Juil. 2024 – Août 2024</div>
+              <h3 class="timeline-title">Data intern</h3>
+              <h4 class="timeline-company">Avito.ma | Casablanca, Maroc</h4>
               <ul class="experience-list">
-                <li>Initiation à l'écosystème Salesforce : Apex, Visualforce, Lightning</li>
-                <li>Création de pages personnalisées et automatisation de processus métier</li>
-                <li>Personnalisation d'objets standard et création d'objets personnalisés</li>
-                <li>Utilisation de Salesforce Flow pour des automatisations sans code</li>
-                <li>Déploiement de solutions via Change Sets et documentation technique</li>
+                <li>Prédiction des prix d’appartements avec régression linéaire, Random Forest et XGBoost</li>
+                <li>EDA et feature engineering (localisation, surface, équipements) sur grandes bases Avito</li>
+                <li>Prétraitement : valeurs manquantes, encodage, normalisation ; pipelines scikit-learn</li>
+                <li>Évaluation RMSE/R² et <strong>+75&nbsp;% de précision</strong> vs méthodes de base</li>
+                <li>Visualisation des résultats (Matplotlib, Seaborn) et recommandations au superviseur</li>
               </ul>
             </div>
           </div>

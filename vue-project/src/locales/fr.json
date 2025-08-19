@@ -9,29 +9,108 @@
     "greeting": "Bonjour, je suis",
     "name": "Ayman Orkhis",
     "title": "",
-    "description": "Étudiant ingénieur en 3ème année à Télécom SudParis, spécialisé en IA et Science des Données. Passionné par l'apprentissage automatique, l'apprentissage profond, le NLP et la vision par ordinateur. Expérimenté en recherche et développement d'IA appliquée, avec des projets allant de la segmentation d'images médicales aux modèles de langage.",
+    "description": "Étudiant ingénieur généraliste en 3ème année à Télécom SudParis, spécialisé en IA et Science des Données. Passionné par l'apprentissage automatique, l'apprentissage profond, le NLP et la vision par ordinateur. Expérimenté en recherche et développement d'IA appliquée, avec des projets allant de la segmentation d'images médicales aux modèles de langage.",
     "contactBtn": "Me Contacter",
     "projectsBtn": "Voir mes Projets",
     "uploadPlaceholder": "Ajouter une photo de profil",
     "changePhoto": "Changer la photo"
   },
   "about": {
-    "title": "À Propos de Moi",
-    "quote": "❝ La seule façon de faire du bon travail est d'aimer ce que vous faites. ❞",
-    "quoteAuthor": "Steve Jobs",
-    "professionalProfile": "Profil Professionnel",
-    "name": "Ayman Orkhis",
-    "location": "Palaiseau, Île-de-France, France",
-    "phone": "+33 671-099-596",
-    "email": "orkhisayman@gmail.com",
-    "bio1": "Je suis un étudiant ingénieur en IA et Science des Données en 3ème année à Télécom SudParis, poursuivant actuellement un Master en Science des Données à l'École Polytechnique. J'ai une solide formation en mathématiques, apprentissage automatique, apprentissage profond, NLP et vision par ordinateur, avec une expérience pratique en Python, SQL et des frameworks tels que TensorFlow, PyTorch et Scikit-learn.",
-    "bio2": "À travers mes stages et projets précédents, j'ai appliqué ces compétences à des défis impactants : segmentation d'images médicales avec des architectures avancées (Mamba & MedNeXt), développement de modèles de langage pour les langues autochtones du Canada utilisant la Génération Augmentée par Récupération (RAG), et modélisation prédictive immobilière chez Avito.ma. Dans chacun de ces projets, je me suis distingué comme contributeur clé, avec plusieurs travaux reconnus par des prix et récompenses.",
-    "bio3": "Autonome, rigoureux et orienté résultats, je valorise le code propre, les expériences reproductibles et le travail d'équipe. Je maîtrise le français et l'anglais, renforcé par des expériences internationales qui ont amélioré mon adaptabilité et ma collaboration interculturelle.",
-    "downloadCV": "Télécharger mon CV",
-    "skills": "Compétences & Expertise",
-    "education": "Formation",
-    "experience": "Expérience"
+  "title": "À propos de moi",
+  "quote": "❝ La seule façon de faire du bon travail est d’aimer ce que vous faites. ❞",
+  "quoteAuthor": "Steve Jobs",
+  "professionalProfile": "Profil Professionnel",
+  "name": "Ayman Orkhis",
+  "location": "Palaiseau, Île-de-France, France",
+  "phone": "+33 671-099-596",
+  "email": "orkhisayman@gmail.com",
+  "bio1": "Je suis étudiant en ingénierie IA & Data Science en 3ème année à Télécom SudParis, actuellement en Master Data Science à l’École Polytechnique. J’ai une solide formation en mathématiques, machine learning, deep learning, NLP et vision par ordinateur, avec une expérience pratique en Python, SQL et frameworks tels que TensorFlow, PyTorch et Scikit-learn.",
+  "bio2": "Au travers de mes précédents stages et projets, j’ai appliqué ces compétences à des défis concrets : segmentation d’images médicales avec des architectures avancées (Mamba & MedNeXt), développement de modèles de langage pour les langues autochtones du Canada en utilisant la génération augmentée par la recherche (RAG), et modélisation prédictive de l’immobilier chez Avito.ma. Dans chacun de ces projets, je me suis distingué comme un contributeur clé, avec plusieurs travaux récompensés par des prix.",
+  "bio3": "Autonome, rigoureux et orienté résultats, j’accorde une grande importance au code propre, aux expériences reproductibles et au travail en équipe. Je suis bilingue français-anglais, renforcé par des expériences internationales qui ont développé mon adaptabilité et ma collaboration interculturelle.",
+  "downloadCV": "Télécharger mon CV",
+  "skills": "Compétences & Expertise",
+  "education": "Formation",
+  "experience": "Expérience",
+
+  "skillsSection": {
+    "title": "Mes Compétences",
+    "subtitle": "Voici quelques-unes des technologies avec lesquelles je travaille",
+    "technical": "Compétences Techniques",
+    "categories": {
+      "languages": {
+        "title": "Langages",
+        "items": ["JavaScript", "TypeScript", "Python", "Java", "SQL"]
+      },
+      "frameworks": {
+        "title": "Frameworks/Bibliothèques",
+        "items": ["NestJS", "TensorFlow", "Vue.js", "PyTorch", "Vite", "nnU-Net v1 & v2", "Scikit-learn", "Pandas", "Matplotlib", "NumPy", "OpenCV", "Keras"]
+      },
+      "databases": {
+        "title": "Bases de données",
+        "items": ["MySQL", "MongoDB"]
+      },
+      "tools": {
+        "title": "Outils",
+        "items": ["Git", "GitHub", "Jupyter", "VS Code", "Eclipse"]
+      }
+    },
+    "softSkillsTitle": "Compétences Comportementales",
+    "softSkills": [
+      "Excellente communication",
+      "Travail d'équipe et collaboration transversale",
+      "Autonomie et sens de l’initiative",
+      "Esprit analytique et résolution de problèmes",
+      "Adaptabilité et apprentissage rapide",
+      "Gestion efficace des priorités et du temps"
+    ],
+    "languagesTitle": "Langues",
+    "spoken": [
+      { "name": "Français", "level": "Courant" },
+      { "name": "Anglais", "level": "Professionnel" }
+    ]
   },
+
+  "experienceSection": {
+    "title": "Expérience Professionnelle",
+    "subtitle": "Mon parcours professionnel et mes réalisations",
+    "items": [
+      {
+        "date": "Juil. 2025 – Août 2025",
+        "role": "Stagiaire NLP / LLM",
+        "company": "Laboratoire ILLS (Mila) – ÉTS | Montréal, QC, Canada",
+        "bullets": [
+          "Développement d’un chatbot pour les langues autochtones canadiennes",
+          "Intégration de données locales et mise en place d’un système RAG",
+          "Suivi et évaluation des politiques EDI via génération augmentée par la recherche",
+          "Présentation à l’Institut Ashukan sur les biais et préjudices introduits par l’IA"
+        ]
+      },
+      {
+        "date": "Déc. 2024 – Présent",
+        "role": "Responsable du Pôle Recherche & Membre de l’Équipe IA",
+        "company": "Kryptosphere | Évry-Courcouronnes, France",
+        "bullets": [
+          "Organisation de formations mensuelles autour des applications avancées de l’IA",
+          "Veille technologique et cadrage de mini-projets internes",
+          "Présentation et vulgarisation de papiers scientifiques récents en IA auprès de la communauté"
+        ]
+      },
+      {
+        "date": "Juil. 2024 – Août 2024",
+        "role": "Stagiaire Data",
+        "company": "Avito.ma | Casablanca, Maroc",
+        "bullets": [
+          "Prédiction des prix d’appartements avec régression linéaire, Random Forest et XGBoost",
+          "EDA et feature engineering (localisation, surface, équipements) sur grandes bases Avito",
+          "Prétraitement : valeurs manquantes, encodage, normalisation ; pipelines scikit-learn",
+          "Évaluation RMSE/R² et +75 % de précision vs méthodes de base",
+          "Visualisation des résultats (Matplotlib, Seaborn) et recommandations au superviseur"
+        ]
+      }
+    ]
+  }
+},
+
   "projects": {
     "title": "Mes Projets",
     "subtitle": "Découvrez mes derniers travaux et réalisations",
@@ -55,7 +134,7 @@
   },
   "contact": {
     "title": "Me Contacter",
-    "subtitle": "Travaillons ensemble",
+    "subtitle": "Disponible pour des opportunités professionnelles et des collaborations.",
     "getInTouch": "Entrer en Contact",
     "description": "Je suis toujours intéressé par de nouvelles opportunités et collaborations. N'hésitez pas à me contacter !",
     "name": "Nom",

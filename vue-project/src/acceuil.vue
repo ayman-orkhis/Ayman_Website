@@ -29,18 +29,9 @@
             />
             <div class="image-preview" :class="{ 'has-image': imagePreview }">
               <img v-if="imagePreview" :src="imagePreview" alt="Profile Preview" class="profile-image" />
-              <div v-else class="upload-placeholder">
-                <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 5v14M5 12h14" />
-                </svg>
-                <span>{{ t('home.uploadPlaceholder') }}</span>
-              </div>
-              <div class="image-overlay">
-                <span>{{ t('home.changePhoto') }}</span>
-              </div>
+              
             </div>
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
+              
           </div>
         </div>
       </div>
@@ -63,7 +54,7 @@ export default {
       imagePreview: meImage,
       projects: [
         {
-          title: 'Application Web Moderne',
+          title: 'Pacman Multiplayer',
           description: 'Une application web complète avec authentification et base de données en temps réel.',
           tags: ['Vue.js', 'Firebase', 'SCSS'],
           image: 'https://via.placeholder.com/600x400',
@@ -71,7 +62,7 @@ export default {
           github: '#'
         },
         {
-          title: 'Site E-commerce',
+          title: 'MambaCare',
           description: 'Plateforme de commerce électronique avec panier d\'achat et paiement en ligne.',
           tags: ['React', 'Node.js', 'MongoDB'],
           image: 'https://via.placeholder.com/600x400',
@@ -79,7 +70,7 @@ export default {
           github: '#'
         },
         {
-          title: 'Application Mobile',
+          title: 'Chatbot',
           description: 'Application mobile multiplateforme pour la gestion des tâches quotidiennes.',
           tags: ['React Native', 'Redux', 'Firebase'],
           image: 'https://via.placeholder.com/600x400',

@@ -177,23 +177,21 @@ export default {
     return {
       activeFilter: 'All',
       selectedProject: null,
-      categories: ['All', 'Web', 'Mobile', 'Desktop', 'Design'],
+      categories: ['All'],
       projects: [
         {
           id: 1,
-          title: 'E-Commerce Platform',
-          shortDescription: 'Plateforme de commerce électronique moderne avec panier et paiement',
-          fullDescription: 'Une plateforme e-commerce complète développée avec React et Node.js. Elle inclut un système de gestion des produits, panier d\'achat, processus de paiement sécurisé et tableau de bord administrateur.',
+          title: 'Pacman-Multiplayer',
+          shortDescription: 'Jeu multijoueur inspiré de Pacman, avec IA pour les fantômes',
+          fullDescription: 'Projet académique développé en Java dans le cadre du cursus à Télécom SudParis. Conception et implémentation d’une IA pour les fantômes, ajout de fonctionnalités multijoueurs et gestion de l’interaction en temps réel.',
           image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop',
-          category: 'Web',
-          technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'JWT'],
+          category: 'Jeu',
+          technologies: ['Java', 'Programmation orientée objet', 'IA'],
           features: [
-            'Système d\'authentification sécurisé',
-            'Gestion complète du panier',
-            'Intégration paiement Stripe',
-            'Interface administrateur',
-            'Recherche et filtres avancés',
-            'Design responsive'
+            'IA des fantômes implémentée',
+            'Mode multijoueur',
+            'Gestion en temps réel des interactions',
+            'Interface graphique simple et interactive',
           ],
           gallery: [
             'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop',
@@ -201,35 +199,33 @@ export default {
             'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop'
           ],
           liveUrl: 'https://demo-ecommerce.netlify.app',
-          githubUrl: 'https://github.com/username/ecommerce-platform'
+          githubUrl: 'https://github.com/ayman-orkhis/Multiplayer_Pacman_Project'
         },
         {
           id: 2,
-          title: 'Task Management App',
-          shortDescription: 'Application de gestion de tâches collaborative avec interface intuitive',
-          fullDescription: 'Une application de gestion de tâches moderne permettant aux équipes de collaborer efficacement. Fonctionnalités incluent la création de projets, assignation de tâches, suivi du progrès et notifications en temps réel.',
+          title: 'Mamba Care - Segmentation de tumeurs cérébrales',
+          shortDescription: '🏆 2ᵉ prix sur 108 projets Cassiopé a Télécom SudParis',
+          fullDescription: 'Étude et implémentation de différentes variantes des architectures Mamba pour la segmentation sémantique de tumeurs cérébrales sur IRM. Comparaison des performances et optimisation pour améliorer la précision du diagnostic médical. 🚀 Ce projet a remporté le **2ᵉ prix parmi 108 projets** dans le cadre du projet industriel Cassiopé.',
           image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop',
-          category: 'Web',
+          category: 'IA & Santé',
           technologies: ['Vue.js', 'Firebase', 'Vuetify', 'PWA'],
           features: [
-            'Collaboration en temps réel',
-            'Glisser-déposer intuitif',
-            'Notifications push',
-            'Mode hors ligne (PWA)',
-            'Tableaux de bord personnalisés',
-            'Intégration calendrier'
+            'Segmentation d’IRM cérébrales',
+            'Comparaison de plusieurs variantes de Mamba',
+            'Optimisation de la précision du diagnostic',
+            'Déploiement sur site web pour démonstration',
           ],
           gallery: [
             'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop',
             'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop',
             'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=500&h=300&fit=crop'
           ],
-          liveUrl: 'https://taskmaster-app.netlify.app',
-          githubUrl: 'https://github.com/username/task-management'
+          liveUrl: 'https://drive.google.com/file/d/1OomYWIQcze23VjmrY1oRi_i8eamZ2XO-/view?usp=sharing',
+          githubUrl: 'https://github.com/ayman-orkhis/MambaCare'
         },
         {
           id: 3,
-          title: 'Weather Forecast Mobile App',
+          title: 'Chatbot',
           shortDescription: 'Application météo mobile avec prévisions détaillées et géolocalisation',
           fullDescription: 'Application mobile native développée avec React Native offrant des prévisions météorologiques précises. Interface élégante avec animations fluides, géolocalisation automatique et alertes météo personnalisées.',
           image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop',
