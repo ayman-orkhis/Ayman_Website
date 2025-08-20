@@ -55,84 +55,148 @@
       }
     },
     "softSkillsTitle": "Soft Skills",
-    "softSkills": [
-      "Excellent communication",
-      "Teamwork and cross-functional collaboration",
-      "Autonomy and initiative",
-      "Analytical mindset and problem solving",
-      "Adaptability and fast learning",
-      "Effective time and priority management"
-    ],
-    "languagesTitle": "Languages",
-    "spoken": [
-      { "name": "French", "level": "Fluent" },
-      { "name": "English", "level": "Professional" }
-    ]
+    "softSkills": {
+    "s1": "Excellent communication",
+    "s2": "Teamwork and cross-functional collaboration",
+    "s3": "Autonomy and initiative",
+    "s4": "Analytical mindset and problem solving",
+    "s5": "Adaptability and fast learning",
+    "s6": "Effective time and priority management"
+     },
+    "languagesSection": {
+    "title": "Languages",
+    "frenchName": "French",
+    "frenchLevel": "Fluent",
+    "englishName": "English",
+    "englishLevel": "English"
+  }
   },
 
   "experienceSection": {
-    "title": "Professional Experience",
-    "subtitle": "My career path and achievements",
-    "items": [
-      {
-        "date": "Jul. 2025 – Aug. 2025",
-        "role": "NLP / LLM Intern",
-        "company": "ILLS Lab (Mila) – ÉTS | Montreal, QC, Canada",
-        "bullets": [
-          "Developed a chatbot for Indigenous languages of Canada",
-          "Integrated local data and built a RAG system",
-          "Monitored/evaluated EDI policies via retrieval-augmented generation",
-          "Presented at the Ashukan Institute on AI-related biases and harms"
-        ]
-      },
-      {
-        "date": "Dec. 2024 – Present",
-        "role": "Head of Research & AI Team Member",
-        "company": "Kryptosphere | Évry-Courcouronnes, France",
-        "bullets": [
-          "Organized monthly trainings on advanced AI applications",
-          "Tech watch and scoping of internal mini-projects",
-          "Presented and popularized recent AI research papers to the community"
-        ]
-      },
-      {
-        "date": "Jul. 2024 – Aug. 2024",
-        "role": "Data Intern",
-        "company": "Avito.ma | Casablanca, Morocco",
-        "bullets": [
-          "Apartment price prediction using Linear Regression, Random Forest, and XGBoost",
-          "EDA and feature engineering (location, area, amenities) on large Avito datasets",
-          "Preprocessing: missing values, encoding, normalization; scikit-learn pipelines",
-          "Evaluation with RMSE/R² and +75% accuracy vs. baselines",
-          "Visualized results (Matplotlib, Seaborn) and delivered recommendations"
-        ]
-      }
-    ]
+  "title": "Professional Experience",
+  "subtitle": "My career path and achievements",
+
+  "exp1_date": "Jul. 2025 – Aug. 2025",
+  "exp1_role": "NLP / LLM Intern",
+  "exp1_company": "ILLS Lab (Mila) – ÉTS | Montreal, QC, Canada",
+  "exp1_bullet1": "Developed a chatbot for Indigenous languages of Canada",
+  "exp1_bullet2": "Integrated local data and built a RAG system",
+  "exp1_bullet3": "Monitored/evaluated EDI policies via retrieval-augmented generation",
+  "exp1_bullet4": "Presented at the Ashukan Institute on AI-related biases and harms",
+
+  "exp2_date": "Dec. 2024 – Present",
+  "exp2_role": "Head of Research & AI Team Member",
+  "exp2_company": "Kryptosphere | Évry-Courcouronnes, France",
+  "exp2_bullet1": "Organized monthly trainings on advanced AI applications",
+  "exp2_bullet2": "Tech watch and scoping of internal mini-projects",
+  "exp2_bullet3": "Presented and popularized recent AI research papers to the community",
+
+  "exp3_date": "Jul. 2024 – Aug. 2024",
+  "exp3_role": "Data Intern",
+  "exp3_company": "Avito.ma | Casablanca, Morocco",
+  "exp3_bullet1": "Apartment price prediction using Linear Regression, Random Forest, and XGBoost",
+  "exp3_bullet2": "EDA and feature engineering (location, area, amenities) on large Avito datasets",
+  "exp3_bullet3": "Preprocessing: missing values, encoding, normalization; scikit-learn pipelines",
+  "exp3_bullet4": "Evaluation with RMSE/R² and +75% accuracy vs. baselines",
+  "exp3_bullet5": "Visualized results (Matplotlib, Seaborn) and delivered recommendations"
   }
 },
 
-  
   "projects": {
-    "title": "My Projects",
-    "subtitle": "Discover my latest work and achievements",
-    "statsProjects": "Projects",
-    "statsCategories": "Categories", 
-    "statsPassion": "Passion",
-    "filterTitle": "Explore by category",
-    "viewProject": "View project",
-    "technologiesUsed": "Technologies used:",
-    "mainFeatures": "Main features:",
-    "gallery": "Gallery:",
-    "viewDemo": "View Demo",
-    "viewCode": "View Code",
-    "categories": {
-      "all": "All",
-      "web": "Web",
-      "mobile": "Mobile",
-      "desktop": "Desktop",
-      "design": "Design"
-    }
+  "title": "My Projects",
+  "subtitle": "Discover my latest work and achievements",
+  "statsProjects": "Projects",
+  "statsCategories": "Categories",
+  "statsPassion": "Passion",
+  "filterTitle": "Explore by category",
+  "viewProject": "View project",
+  "technologiesUsed": "Technologies used:",
+  "mainFeatures": "Main features:",
+  "gallery": "Gallery:",
+  "viewDemo": "View Demo",
+  "viewCode": "View Code",
+
+  "categories": {
+    "all": "All",
+    "web": "Web",
+    "mobile": "Mobile",
+    "desktop": "Desktop",
+    "design": "Design"
   },
+
+  "items": [
+    {
+      "id": 1,
+      "title": "Pacman-Multiplayer",
+      "shortDescription": "Multiplayer game inspired by Pacman, with AI-driven ghosts",
+      "fullDescription": "Academic project developed in Java at Télécom SudParis. Designed and implemented AI for ghosts, added multiplayer features and real-time interaction handling.",
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
+      "categoryKey": "web",
+      "technologies": ["Java", "JavaFX", "JavaSwing", "Object-Oriented Programming", "AI"],
+      "features": [
+        "Implemented ghost AI",
+        "Multiplayer mode",
+        "Real-time interaction management",
+        "Simple and interactive GUI"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
+        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&h=300&fit=crop",
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop"
+      ],
+      "liveUrl": "https://demo-ecommerce.netlify.app",
+      "githubUrl": "https://github.com/ayman-orkhis/Multiplayer_Pacman_Project"
+    },
+    {
+      "id": 2,
+      "title": "Mamba Care - Brain Tumor Segmentation",
+      "shortDescription": "🏆 2nd prize out of 108 Cassiopé projects at Télécom SudParis",
+      "fullDescription": "Study and implementation of Mamba architecture variants for MRI brain tumor segmentation. Performance comparison and optimization to improve diagnostic accuracy.",
+      "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
+      "categoryKey": "web",
+      "technologies": ["Vue.js", "Firebase", "Vuetify", "PWA"],
+      "features": [
+        "Brain MRI segmentation",
+        "Multiple Mamba variants compared",
+        "Diagnostic accuracy optimization",
+        "Web demo deployment"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
+        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop",
+        "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=500&h=300&fit=crop"
+      ],
+      "liveUrl": "https://drive.google.com/file/d/1OomYWIQcze23VjmrY1oRi_i8eamZ2XO-/view?usp=sharing",
+      "githubUrl": "https://github.com/ayman-orkhis/MambaCare"
+    },
+    {
+      "id": 3,
+      "title": "Chatbot",
+      "shortDescription": "Mobile weather app with detailed forecasts and geolocation",
+      "fullDescription": "React Native app offering accurate weather forecasts, smooth animations, automatic geolocation and custom alerts.",
+      "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
+      "categoryKey": "mobile",
+      "technologies": ["React Native", "TypeScript", "OpenWeather API", "AsyncStorage"],
+      "features": [
+        "Automatic geolocation",
+        "7-day forecast",
+        "Custom weather alerts",
+        "Adaptive UI",
+        "Dark/Light mode",
+        "Interactive weather maps"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
+        "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=500&h=300&fit=crop",
+        "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=500&h=300&fit=crop"
+      ],
+      "liveUrl": "https://play.google.com/store/apps/weather-pro",
+      "githubUrl": "https://github.com/username/weather-app"
+    }
+  ]
+},
+
+    
   "contact": {
     "title": "Contact Me",
     "subtitle": "Reach out for job opportunities or collaborations.",

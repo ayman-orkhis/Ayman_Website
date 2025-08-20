@@ -163,43 +163,39 @@
           </div>
           
           <div class="skill-category">
-            <h3 class="skill-category-title">Compétences Comportementales</h3>
+            <h3 class="skill-category-title">{{ t('about.skillsSection.softSkillsTitle') }}</h3>
             <ul class="soft-skills">
               <li class="soft-skill-item">
                 <i class="fas fa-check-circle"></i>
-                <span>Excellente communication</span>
+                <span>{{ t('about.skillsSection.softSkills.s1') }}</span>
               </li>
               <li class="soft-skill-item">
                 <i class="fas fa-check-circle"></i>
-                <span>Travail d'équipe et collaboration transversale</span>
+                <span>{{ t('about.skillsSection.softSkills.s2') }}</span>
               </li>
               <li class="soft-skill-item">
                 <i class="fas fa-check-circle"></i>
-                <span>Autonomie et sens de l'initiative</span>
+                <span>{{ t('about.skillsSection.softSkills.s3') }}</span>
               </li>
               <li class="soft-skill-item">
                 <i class="fas fa-check-circle"></i>
-                <span>Esprit analytique et résolution de problèmes</span>
+                <span>{{ t('about.skillsSection.softSkills.s4') }}</span>
               </li>
               <li class="soft-skill-item">
                 <i class="fas fa-check-circle"></i>
-                <span>Adaptabilité et apprentissage rapide</span>
-              </li>
-              <li class="soft-skill-item">
-                <i class="fas fa-check-circle"></i>
-                <span>Gestion efficace des priorités et du temps</span>
+                <span>{{ t('about.skillsSection.softSkills.s6') }}</span>
               </li>
             </ul>
             
-            <h3 class="skill-category-title" style="margin-top: 30px;">Langues</h3>
+            <h3 class="skill-category-title" style="margin-top: 30px;">{{ t('about.skillsSection.languagesSection.title') }}</h3>
             <div class="languages">
               <div class="language-item">
-                <span class="language-name">Français</span>
-                <span class="language-level">Courant</span>
+                <span class="language-name">{{ t('about.skillsSection.languagesSection.frenchName') }}</span>
+                <span class="language-level">{{ t('about.skillsSection.languagesSection.frenchLevel') }}</span>
               </div>
               <div class="language-item">
-                <span class="language-name">Anglais</span>
-                <span class="language-level">Professionnel</span>
+                <span class="language-name">{{ t('about.skillsSection.languagesSection.englishName') }}</span>
+                <span class="language-level">{{ t('about.skillsSection.languagesSection.englishLevel') }}</span>
               </div>
             </div>
           </div>
@@ -210,54 +206,53 @@
     <!-- Experience Section -->
     <section class="experience-section">
       <div class="container">
-        <h2 class="section-title text-center">Expérience Professionnelle</h2>
-        <p class="section-description text-center">Mon parcours professionnel et mes réalisations</p>
+        <h2 class="section-title text-center">{{ t('about.experienceSection.title') }}</h2>
         
         <div class="timeline">
-          <!-- Neova ERP -->
+          <!-- Mila -->
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <div class="timeline-date">Juil. 2025 – Août 2025</div>
-              <h3 class="timeline-title">Stagiaire NLP / LLM</h3>
-              <h4 class="timeline-company">Laboratoire ILLS (Mila) – ÉTS | Montréal, QC, Canada</h4>
+              <div class="timeline-date">{{ t('about.experienceSection.exp1_date') }}</div>
+              <h3 class="timeline-title">{{ t('about.experienceSection.exp1_role') }}</h3>
+              <h4 class="timeline-company">{{ t('about.experienceSection.exp1_company') }}</h4>
               <ul class="experience-list">
-                <li>Développement d’un Chatbot pour les langues autochtones canadiennes</li>
-                <li>Intégration de données locales et mise en place d’un système RAG</li>
-                <li>Suivi/évaluation des politiques EDI via génération augmentée par la recherche</li>
-                <li>Présentation à l’Institut Ashukan sur les biais et préjudices introduits par l’IA</li>
+                <li>{{ t('about.experienceSection.exp1_bullet1') }}</li>
+                <li>{{ t('about.experienceSection.exp1_bullet2') }}</li>
+                <li>{{ t('about.experienceSection.exp1_bullet3') }}</li>
+                <li>{{ t('about.experienceSection.exp1_bullet4') }}</li>
               </ul>
             </div>
           </div>
           
-          <!-- Wirkn -->
+          <!-- Kryptoshere -->
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <div class="timeline-date">Déc. 2024 – Présent</div>
-              <h3 class="timeline-title">Responsable du Pôle Recherche & Membre de l'Équipe IA</h3>
-              <h4 class="timeline-company">Kryptosphere | Évry-Courcouronnes, France</h4>
+              <div class="timeline-date">{{ t('about.experienceSection.exp2_date') }}</div>
+              <h3 class="timeline-title">{{ t('about.experienceSection.exp2_role') }}</h3>
+              <h4 class="timeline-company">{{ t('about.experienceSection.exp2_company') }}</h4>
               <ul class="experience-list">
-                <li>Organisation de formations mensuelles autour des applications avancées de l’IA</li>
-                <li>Veille technologique et cadrage de mini-projets internes</li>
-                <li>Présentation et vulgarisation de papiers scientifiques récents en IA auprès de la communauté</li>
+                <li>{{ t('about.experienceSection.exp2_bullet1') }}</li>
+                <li>{{ t('about.experienceSection.exp2_bullet2') }}</li>
+                <li>{{ t('about.experienceSection.exp2_bullet3') }}</li>
               </ul>
             </div>
           </div>
           
-          <!-- Stage Salesforce -->
+          <!-- Avito -->
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <div class="timeline-date">Juil. 2024 – Août 2024</div>
-              <h3 class="timeline-title">Data intern</h3>
-              <h4 class="timeline-company">Avito.ma | Casablanca, Maroc</h4>
+              <div class="timeline-date">{{ t('about.experienceSection.exp3_date') }}</div>
+              <h3 class="timeline-title">{{ t('about.experienceSection.exp3_role') }}</h3>
+              <h4 class="timeline-company">{{ t('about.experienceSection.exp3_company') }}</h4>
               <ul class="experience-list">
-                <li>Prédiction des prix d’appartements avec régression linéaire, Random Forest et XGBoost</li>
-                <li>EDA et feature engineering (localisation, surface, équipements) sur grandes bases Avito</li>
-                <li>Prétraitement : valeurs manquantes, encodage, normalisation ; pipelines scikit-learn</li>
-                <li>Évaluation RMSE/R² et <strong>+75&nbsp;% de précision</strong> vs méthodes de base</li>
-                <li>Visualisation des résultats (Matplotlib, Seaborn) et recommandations au superviseur</li>
+                <li>{{ t('about.experienceSection.exp3_bullet1') }}</li>
+                <li>{{ t('about.experienceSection.exp3_bullet2') }}</li>
+                <li>{{ t('about.experienceSection.exp3_bullet3') }}</li>
+                <li>{{ t('about.experienceSection.exp3_bullet4') }}</li>
+                <li>{{ t('about.experienceSection.exp3_bullet5') }}</li>
               </ul>
             </div>
           </div>

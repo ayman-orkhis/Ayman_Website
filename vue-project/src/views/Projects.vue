@@ -186,7 +186,7 @@ export default {
           fullDescription: 'Projet académique développé en Java dans le cadre du cursus à Télécom SudParis. Conception et implémentation d’une IA pour les fantômes, ajout de fonctionnalités multijoueurs et gestion de l’interaction en temps réel.',
           image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop',
           category: 'Jeu',
-          technologies: ['Java', 'Programmation orientée objet', 'IA'],
+          technologies: ['Java','JavaFX','JavaSwing', 'Programmation orientée objet', 'IA'],
           features: [
             'IA des fantômes implémentée',
             'Mode multijoueur',
@@ -198,7 +198,7 @@ export default {
             'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&h=300&fit=crop',
             'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop'
           ],
-          liveUrl: 'https://demo-ecommerce.netlify.app',
+          liveUrl: 'https://drive.google.com/drive/folders/1wl0n1ykKLxjByTf2gvT1hhWkmgHV45QA',
           githubUrl: 'https://github.com/ayman-orkhis/Multiplayer_Pacman_Project'
         },
         {
@@ -244,8 +244,8 @@ export default {
             'https://images.unsplash.com/photo-1592210454359-9043f067919b?w=500&h=300&fit=crop',
             'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=500&h=300&fit=crop'
           ],
-          liveUrl: 'https://play.google.com/store/apps/weather-pro',
-          githubUrl: 'https://github.com/username/weather-app'
+          liveUrl: 'https://drive.google.com/drive/folders/1qepdw9sPq2CbQ48H6socu-EwGtnDIzW4',
+          githubUrl: 'https://github.com/ayman-orkhis/Chatbot'
         }
       ]
     }

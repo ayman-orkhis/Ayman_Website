@@ -55,83 +55,147 @@
       }
     },
     "softSkillsTitle": "Compétences Comportementales",
-    "softSkills": [
-      "Excellente communication",
-      "Travail d'équipe et collaboration transversale",
-      "Autonomie et sens de l’initiative",
-      "Esprit analytique et résolution de problèmes",
-      "Adaptabilité et apprentissage rapide",
-      "Gestion efficace des priorités et du temps"
-    ],
-    "languagesTitle": "Langues",
-    "spoken": [
-      { "name": "Français", "level": "Courant" },
-      { "name": "Anglais", "level": "Professionnel" }
-    ]
+    "softSkills": {
+      "s1": "Excellente communication",
+      "s2": "Travail d'équipe et collaboration transversale",
+      "s3": "Autonomie et sens de l'initiative",
+      "s4": "Esprit analytique et résolution de problèmes",
+      "s5": "Adaptabilité et apprentissage rapide",
+      "s6": "Gestion efficace des priorités et du temps"
+    },
+    "languagesSection": {
+    "title": "Langues",
+    "frenchName": "Français",
+    "frenchLevel": "Courant",
+    "englishName": "Anglais",
+    "englishLevel": "Professionnel"
+}
   },
 
   "experienceSection": {
-    "title": "Expérience Professionnelle",
-    "subtitle": "Mon parcours professionnel et mes réalisations",
-    "items": [
-      {
-        "date": "Juil. 2025 – Août 2025",
-        "role": "Stagiaire NLP / LLM",
-        "company": "Laboratoire ILLS (Mila) – ÉTS | Montréal, QC, Canada",
-        "bullets": [
-          "Développement d’un chatbot pour les langues autochtones canadiennes",
-          "Intégration de données locales et mise en place d’un système RAG",
-          "Suivi et évaluation des politiques EDI via génération augmentée par la recherche",
-          "Présentation à l’Institut Ashukan sur les biais et préjudices introduits par l’IA"
-        ]
-      },
-      {
-        "date": "Déc. 2024 – Présent",
-        "role": "Responsable du Pôle Recherche & Membre de l’Équipe IA",
-        "company": "Kryptosphere | Évry-Courcouronnes, France",
-        "bullets": [
-          "Organisation de formations mensuelles autour des applications avancées de l’IA",
-          "Veille technologique et cadrage de mini-projets internes",
-          "Présentation et vulgarisation de papiers scientifiques récents en IA auprès de la communauté"
-        ]
-      },
-      {
-        "date": "Juil. 2024 – Août 2024",
-        "role": "Stagiaire Data",
-        "company": "Avito.ma | Casablanca, Maroc",
-        "bullets": [
-          "Prédiction des prix d’appartements avec régression linéaire, Random Forest et XGBoost",
-          "EDA et feature engineering (localisation, surface, équipements) sur grandes bases Avito",
-          "Prétraitement : valeurs manquantes, encodage, normalisation ; pipelines scikit-learn",
-          "Évaluation RMSE/R² et +75 % de précision vs méthodes de base",
-          "Visualisation des résultats (Matplotlib, Seaborn) et recommandations au superviseur"
-        ]
-      }
-    ]
-  }
+  "title": "Expérience Professionnelle",
+  "subtitle": "Mon parcours et mes réalisations",
+
+  "exp1_date": "Juil. 2025 – Août 2025",
+  "exp1_role": "Stagiaire NLP / LLM",
+  "exp1_company": "ILLS Lab (Mila) – ÉTS | Montréal, QC, Canada",
+  "exp1_bullet1": "Développement d’un chatbot pour les langues autochtones du Canada",
+  "exp1_bullet2": "Intégration de données locales et mise en place d’un système RAG",
+  "exp1_bullet3": "Suivi/évaluation des politiques EDI via retrieval-augmented generation",
+  "exp1_bullet4": "Présentation à l’Institut Ashukan sur les biais et dommages liés à l’IA",
+
+  "exp2_date": "Déc. 2024 – Présent",
+  "exp2_role": "Responsable Recherche & Membre de l’équipe IA",
+  "exp2_company": "Kryptosphere | Évry-Courcouronnes, France",
+  "exp2_bullet1": "Organisation de formations mensuelles sur les applications avancées de l’IA",
+  "exp2_bullet2": "Veille technologique et cadrage de mini-projets internes",
+  "exp2_bullet3": "Présentation et vulgarisation d’articles de recherche récents",
+
+  "exp3_date": "Juil. 2024 – Août 2024",
+  "exp3_role": "Stagiaire Data",
+  "exp3_company": "Avito.ma | Casablanca, Maroc",
+  "exp3_bullet1": "Prédiction des prix d’appartements via Régression Linéaire, Random Forest et XGBoost",
+  "exp3_bullet2": "EDA et feature engineering (localisation, surface, commodités) sur grands datasets Avito",
+  "exp3_bullet3": "Prétraitement : valeurs manquantes, encodage, normalisation ; pipelines scikit-learn",
+  "exp3_bullet4": "Évaluation avec RMSE/R² et +75% de précision vs. baselines",
+  "exp3_bullet5": "Visualisation des résultats (Matplotlib, Seaborn) et recommandations"
+}
 },
 
   "projects": {
-    "title": "Mes Projets",
-    "subtitle": "Découvrez mes derniers travaux et réalisations",
-    "statsProjects": "Projets",
-    "statsCategories": "Catégories",
-    "statsPassion": "Passion",
-    "filterTitle": "Explorez par catégorie",
-    "viewProject": "Voir le projet",
-    "technologiesUsed": "Technologies utilisées :",
-    "mainFeatures": "Fonctionnalités principales :",
-    "gallery": "Galerie :",
-    "viewDemo": "Voir la Démo",
-    "viewCode": "Voir le Code",
-    "categories": {
-      "all": "Tous",
-      "web": "Web",
-      "mobile": "Mobile",
-      "desktop": "Desktop",
-      "design": "Design"
-    }
+  "title": "Mes Projets",
+  "subtitle": "Découvrez mes derniers travaux et réalisations",
+  "statsProjects": "Projets",
+  "statsCategories": "Catégories",
+  "statsPassion": "Passion",
+  "filterTitle": "Explorer par catégorie",
+  "viewProject": "Voir le projet",
+  "technologiesUsed": "Technologies utilisées :",
+  "mainFeatures": "Fonctionnalités principales :",
+  "gallery": "Galerie :",
+  "viewDemo": "Voir la démo",
+  "viewCode": "Voir le code",
+
+  "categories": {
+    "all": "Tous",
+    "web": "Web",
+    "mobile": "Mobile",
+    "desktop": "Bureau",
+    "design": "Design"
   },
+
+  "items": [
+    {
+      "id": 1,
+      "title": "Pacman-Multiplayer",
+      "shortDescription": "Jeu multijoueur inspiré de Pacman, avec des fantômes contrôlés par IA",
+      "fullDescription": "Projet académique développé en Java à Télécom SudParis. Conception et implémentation d'une IA pour les fantômes, ajout de fonctionnalités multijoueur et gestion des interactions en temps réel.",
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
+      "categoryKey": "web",
+      "technologies": ["Java", "JavaFX", "JavaSwing", "Programmation Orientée Objet", "IA"],
+      "features": [
+        "Implémentation de l’IA des fantômes",
+        "Mode multijoueur",
+        "Gestion des interactions en temps réel",
+        "Interface graphique simple et interactive"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
+        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&h=300&fit=crop",
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop"
+      ],
+      "liveUrl": "https://demo-ecommerce.netlify.app",
+      "githubUrl": "https://github.com/ayman-orkhis/Multiplayer_Pacman_Project"
+    },
+    {
+      "id": 2,
+      "title": "Mamba Care - Segmentation de Tumeurs Cérébrales",
+      "shortDescription": "🏆 2ᵉ prix sur 108 projets Cassiopé à Télécom SudParis",
+      "fullDescription": "Étude et implémentation de variantes de l’architecture Mamba pour la segmentation d’IRM cérébrales. Comparaison des performances et optimisation pour améliorer la précision du diagnostic.",
+      "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
+      "categoryKey": "web",
+      "technologies": ["Vue.js", "Firebase", "Vuetify", "PWA"],
+      "features": [
+        "Segmentation d’IRM cérébrales",
+        "Comparaison de plusieurs variantes de Mamba",
+        "Optimisation de la précision du diagnostic",
+        "Déploiement d’une démo web"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
+        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop",
+        "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=500&h=300&fit=crop"
+      ],
+      "liveUrl": "https://drive.google.com/file/d/1OomYWIQcze23VjmrY1oRi_i8eamZ2XO-/view?usp=sharing",
+      "githubUrl": "https://github.com/ayman-orkhis/MambaCare"
+    },
+    {
+      "id": 3,
+      "title": "Chatbot",
+      "shortDescription": "Application mobile météo avec prévisions détaillées et géolocalisation",
+      "fullDescription": "Application React Native offrant des prévisions météorologiques précises, des animations fluides, la géolocalisation automatique et des alertes personnalisées.",
+      "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
+      "categoryKey": "mobile",
+      "technologies": ["React Native", "TypeScript", "OpenWeather API", "AsyncStorage"],
+      "features": [
+        "Géolocalisation automatique",
+        "Prévisions sur 7 jours",
+        "Alertes météo personnalisées",
+        "Interface adaptative",
+        "Mode sombre/clair",
+        "Cartes météo interactives"
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
+        "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=500&h=300&fit=crop",
+        "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=500&h=300&fit=crop"
+      ],
+      "liveUrl": "https://play.google.com/store/apps/weather-pro",
+      "githubUrl": "https://github.com/username/weather-app"
+    }
+  ]
+},
+
   "contact": {
     "title": "Me Contacter",
     "subtitle": "Disponible pour des opportunités professionnelles et des collaborations.",
