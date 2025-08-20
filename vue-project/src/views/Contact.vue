@@ -49,7 +49,7 @@
           <div class="social-section">
             <h3>{{ t('contact.followMe') }}</h3>
             <div class="social-links">
-              <a href="https://github.com/Pacman-Ayman" target="_blank" class="social-link" aria-label="GitHub">
+              <a href="https://github.com/ayman-orkhis" target="_blank" class="social-link" aria-label="GitHub">
                 <i class="fab fa-github"></i>
               </a>
               <a href="https://www.linkedin.com/in/ayman-orkhis/" target="_blank" class="social-link" aria-label="LinkedIn">

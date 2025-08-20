@@ -32,7 +32,7 @@
               <span>+33 671-099-596</span>
             </div>
             <div class="social-links">
-              <a href="https://github.com/Pacman-Ayman" target="_blank" class="social-link" aria-label="GitHub" title="GitHub">
+              <a href="https://github.com/ayman-orkhis" target="_blank" class="social-link" aria-label="GitHub" title="GitHub">
                 <i class="fab fa-github"></i>
               </a>
               <a href="https://www.linkedin.com/in/ayman-orkhis/" target="_blank" class="social-link" aria-label="LinkedIn" title="LinkedIn">
